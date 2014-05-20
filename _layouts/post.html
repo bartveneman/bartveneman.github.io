@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="M">
+    <h1>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+
+    <time datetime="{{ post.date }}">{{ page.date | date_to_long_string }}</time>
+
+    {{ content }}
+</article><!--
+
+--><section class="S">
+    <h3>Other posts</h3>
+    <ol class="E">
+        {% for post in site.posts limit:6 %}
+            {% if post.title != page.title %}
+                <li>
+                    <a href="{{ post.url }}">
+                        <time>{{ post.date | date_to_long_string }}</time>
+                        <h4 class="text-truncate">{{ post.title }}</h4>
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</section>

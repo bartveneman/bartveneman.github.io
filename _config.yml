@@ -1,0 +1,6 @@
+name: "Bart Veneman - Front-end webdevelopment, performance, architecture and responsive webdesign"
+url: "http://www.bveneman.nl"
+permalink: pretty
+markdown: kramdown
+pygments: true
+exclude: ["package.json", "gulpfile.js", "node_modules"]
