@@ -1,12 +1,11 @@
 # www.bveneman.nl
-The goal of this site is to offer an insight to a developers daily struggles, wins and ideas. 
+The goal of this site is to offer an insight to a developers daily struggles, wins and ideas. The UI is minimal and optimized for a distraction-free reading experience.
 A secondary goal is making this site as fast as possible. This means:
 
 - No webfonts;
 - No external stylesheet(s);
 - Only Javascript for Google Analytics;
 - Hardly any images, and preferrably SVG's;
-- Serving from a subdomain, because it's supposed to be faster;
 
 Do you spot any potential performance wins?
 
