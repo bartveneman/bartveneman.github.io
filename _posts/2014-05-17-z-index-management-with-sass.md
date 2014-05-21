@@ -34,14 +34,17 @@ title: Z-index management with SASS
 <p>As you can see, there's a total of 3 different priorities. We can use this to calculate the <code>z-index</code> for each element dynamically with SASS. The following function will return the apropriate <code>z-index</code> according to the priority of the element.</p>
 
 <h2>The function</h2>
-<pre><code>$num-zindex-priorities: 3;
+{% highlight scss %}
+$num-zindex-priorities: 3;
 
 @function calculate-z-index($priority) {
     @return $num-zindex-priorities - $priority;
-}</code></pre>
+}
+{% endhighlight %}
 
 <h2>Usage example</h2>
-<pre><code>.Modal {
+{% highlight css %}
+.Modal {
     z-index: calculate-z-index(1);
 }
 
@@ -51,7 +54,8 @@ title: Z-index management with SASS
 
 .PageHead__Nav {
     z-index: calculate-z-index(3);
-}</code></pre>
+}
+{% endhighlight %}
 
 <p>This will be compiled to:</p>
 
