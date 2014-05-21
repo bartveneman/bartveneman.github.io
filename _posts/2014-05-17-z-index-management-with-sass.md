@@ -43,7 +43,7 @@ $num-zindex-priorities: 3;
 {% endhighlight %}
 
 <h2>Usage example</h2>
-{% highlight css %}
+{% highlight scss %}
 .Modal {
     z-index: calculate-z-index(1);
 }
