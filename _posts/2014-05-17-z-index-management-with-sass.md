@@ -55,7 +55,8 @@ title: Z-index management with SASS
 
 <p>This will be compiled to:</p>
 
-<pre><code>.Modal {
+{% highlight css %}
+.Modal {
     z-index: 2;
 }
 
@@ -65,6 +66,7 @@ title: Z-index management with SASS
 
 .PageHead__Nav {
     z-index: 0;
-}</code></pre>
+}
+{% endhighlight %}
 
 <p><em>Of course this is a hack, but sometimes we need hacks.</em></p>
