@@ -2,5 +2,4 @@ name: "Bart Veneman - Front-end webdevelopment, performance, architecture and re
 url: "http://bveneman.nl"
 permalink: pretty
 markdown: kramdown
-highlighter: pygments
 exclude: ["package.json", "gulpfile.js", "node_modules"]
