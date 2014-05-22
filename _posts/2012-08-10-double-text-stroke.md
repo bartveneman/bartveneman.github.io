@@ -7,14 +7,14 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
 
 ## HTML
 
-````html
+```` html
 <h1 class="stroked">Colombia</h1>
 ````
 
 
 ## CSS
 
-````css
+```` css
 @import url("http://fonts.googleapis.com/css?family=Bangers");
 
 .stroked {
