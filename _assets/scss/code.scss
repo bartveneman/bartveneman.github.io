@@ -30,6 +30,8 @@ pre code {
 .k, // keyword
 .nt, // name.tag
 .na, // name.attribute
+.nx, // name.other
+.nb, // Name.Builtin
 .n { // name
 	color: #8AA8B0; 
 }
@@ -42,6 +44,7 @@ pre code {
 .nf, // name.function
 .m, // literal.number
 .mi, // Literal.Number.Integer
+.s2, // Literal.String.Double
 .s { // literal.string
 	color: #fff; 
 }
