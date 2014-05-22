@@ -7,14 +7,14 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
 
 ## HTML
 
-```` html
+{% highlight html %}
 <h1 class="stroked">Colombia</h1>
-````
+{% endhighlight %}
 
 
 ## CSS
 
-```` css
+{% highlight css %}
 @import url("http://fonts.googleapis.com/css?family=Bangers");
 
 .stroked {
@@ -28,7 +28,7 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
     -.025em  .025em 0 #444,
     .025em  .025em 0 #444;
   color: #fff; /* For non-webkit-browsers */
-````
+{% endhighlight %}
 
 That last css rule acts as a fallback for browsers that don’t support the `text-stroke`property. It makes the text go white instead of dark gray.
 
