@@ -29,6 +29,12 @@ The idea is to go through the complete site and compile a list of elements that 
             </td>
             <td>2</td>
         </tr>
+        <tr>
+            <td>
+                <code>.PageHead__Nav</code>
+            </td>
+            <td>3</td>
+        </tr>
     </tbody>
 </table>
 
