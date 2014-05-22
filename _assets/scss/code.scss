@@ -23,6 +23,22 @@ pre code {
     font-size: 0.875em;
 }
 
-.code-comment {
-    color: #777;
+.c { // comment
+	color: #777; 
+}
+
+.k, // keyword
+.na {  // name.attribute
+	color: #8AA8B0; 
+}
+
+.nc, // name.class
+.nv { // name.variable
+	color: #F26101; 
+}
+
+.nf, // name.function
+.m, // literal.number
+.mi { // Literal.Number.Integer
+	color: #fff; 
 }
