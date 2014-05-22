@@ -3,11 +3,12 @@ layout: post
 title: Z-index management with SASS
 ---
 
-<p>Large projects can suffer from complex UI components and external libraries for sliders etc. Here you are with your carefully created library and sliders are moving over modals, buttons become unresponsive to interactions because some element is placed on top of them. We need <code>z-index</code> management.</p>
+Large projects can suffer from complex UI components and external libraries for sliders etc. Here you are with your carefully created library and sliders are moving over modals, buttons become unresponsive to interactions because some element is placed on top of them. We need `z-index` management.
 
-<p>The idea is to go through the complete site and compile a list of elements that have/need a <code>z-index</code>. After that, set a priority for each element. An element with priority 1 should be stacked on top of an element with priority 2 and so on. Elements whose stacking order doesn't matter can have the same priority.</p>
+The idea is to go through the complete site and compile a list of elements that have/need a `z-index`. After that, set a priority for each element. An element with priority 1 should be stacked on top of an element with priority 2 and so on. Elements whose stacking order doesn't matter can have the same priority.
 
-<h2>Creating a priority list</h2>
+## Creating a priority list
+
 <table>
     <thead>
         <tr>
@@ -31,9 +32,10 @@ title: Z-index management with SASS
     </tbody>
 </table>
 
-<p>As you can see, there's a total of 3 different priorities. We can use this to calculate the <code>z-index</code> for each element dynamically with SASS. The following function will return the apropriate <code>z-index</code> according to the priority of the element.</p>
+As you can see, there's a total of 3 different priorities. We can use this to calculate the `z-index` for each element dynamically with SASS. The following function will return the apropriate `z-index` according to the priority of the element.
 
-<h2>The function</h2>
+## The function
+
 {% highlight scss %}
 $num-zindex-priorities: 3;
 
@@ -42,7 +44,9 @@ $num-zindex-priorities: 3;
 }
 {% endhighlight %}
 
-<h2>Usage example</h2>
+
+## Usage example
+
 {% highlight scss %}
 .Modal {
     z-index: calculate-z-index(1);
@@ -57,7 +61,7 @@ $num-zindex-priorities: 3;
 }
 {% endhighlight %}
 
-<p>This will be compiled to:</p>
+This will be compiled to:
 
 {% highlight css %}
 .Modal {
@@ -73,4 +77,4 @@ $num-zindex-priorities: 3;
 }
 {% endhighlight %}
 
-<p><em>Of course this is a hack, but sometimes we need hacks.</em></p>
+_Of course this is a hack, but sometimes we need hacks._
