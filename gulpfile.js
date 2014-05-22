@@ -4,7 +4,6 @@ var gulp = require("gulp"),
 	minify = require("gulp-minify-css"),
 	size = require("gulp-size"),
 	cmq = require('gulp-combine-media-queries'),
-	minifyhtml = require("gulp-minify-html"),
 	lr = require("tiny-lr"),
 	server = lr();
 
@@ -46,24 +45,15 @@ gulp.task("sass", function () {
 		.pipe(gulp.dest("_includes")); //8
 });
 
-gulp.task("html", function () {
-	gulp.src("_site/**/*.html")
-		.pipe(minifyhtml({
-			quotes: true
-		}))
-		.pipe(gulp.dest("_site"));
-});
-
 /**
  * Watch task: to run tasks after files have changed
  */
-gulp.task("watch", ["sass", "html"], function () {
+gulp.task("watch", ["sass"], function () {
 	server.listen(35729, function (err) {
         if (err) {
             return console.log(err);
         }
 
         gulp.watch("_assets/scss/**/*.scss", ["sass"]);
-        gulp.watch("_site/**/*.html", ["html"]);
     });
 });
