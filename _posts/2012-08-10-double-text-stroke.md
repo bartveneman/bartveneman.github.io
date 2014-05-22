@@ -8,13 +8,13 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
 ## HTML
 
 {% highlight html %}
-  &lt;h1 class=&quot;stroked&quot;&gt;Colombia&lt;/h1&gt;
+<h1 class="stroked">Colombia</h1>
 {% endhighlight %}
 
 
 ## CSS
 
-{% highlight html %}
+{% highlight css %}
 @import url(http://fonts.googleapis.com/css?family=Bangers);
 
 .stroked {
