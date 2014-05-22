@@ -15,7 +15,7 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
 ## CSS
 
 {% highlight css %}
-@import url(http://fonts.googleapis.com/css?family=Bangers);
+@import url("http://fonts.googleapis.com/css?family=Bangers");
 
 .stroked {
   font: 8em/1 Bangers, sans-serif;
