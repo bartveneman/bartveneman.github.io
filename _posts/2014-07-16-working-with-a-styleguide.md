@@ -5,7 +5,7 @@ title: Working with a styleguide
 
 A style guide is a great reference for creating an online platform. At Printdeal.com we&rsquo;re currently working on a complete new platform, based on frameworks and infrastructures like Symphony2 and the Amazon AWS cloud. Luckily, we&rsquo;re not neglecting the frontend. Responsive, performance and architecture: we got it all! And all of this based on a single thing: the Style Guide.
 
-![Printdeal.com style guide teaser](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_teaser.png)
+![Printdeal.com style guide teaser](/img/2014-07-16-style_guide_teaser.png)
 
 ## The main goals
 
@@ -57,10 +57,10 @@ Therefore, the style guide helps us define and test the small parts. When combin
 ## Be flexible
 The best thing about having a style guide the way we do, I think, is that you can be 100% flexible. Because all objects have seperate concerns, we can adjust them to our likings and all should be well. Of course this doesn&rsquo;t always apply, but in most cases it works. For example, our designer Elbert came up with a new design for a balloon element in the site. The new design could very easily be converted to code and even better, we were able to split it into two different objects to create even greater reusability throughout our code.
 
-![The old, visually slightly more complex balloon](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_balloon_old.png)
+![The old, visually slightly more complex balloon](/img/2014-07-16-style_guide_balloon_old.png)
 The old, visually slightly more complex balloon
 
-![The new balloon, it even comes in two different forms and more flexibility with the elements inside it](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_balloon_new_1.png)
+![The new balloon, it even comes in two different forms and more flexibility with the elements inside it](/img/2014-07-16-style_guide_balloon_new_1.png)
 The new balloon, it even comes in two different forms and more flexibility with the elements inside it
 
 ## Everybody wins
