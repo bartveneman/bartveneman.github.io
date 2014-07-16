@@ -42,7 +42,7 @@ gulp.task("sass", function () {
 			title: "gzipped",
 			gzip: true
 		}))
-		.pipe(gulp.dest("_includes")); //8
+		.pipe(gulp.dest("_includes")); // 8
 });
 
 /**
