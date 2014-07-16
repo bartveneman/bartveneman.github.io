@@ -57,9 +57,11 @@ Therefore, the style guide helps us define and test the small parts. When combin
 ## Be flexible
 The best thing about having a style guide the way we do, I think, is that you can be 100% flexible. Because all objects have seperate concerns, we can adjust them to our likings and all should be well. Of course this doesn&rsquo;t always apply, but in most cases it works. For example, our designer Elbert came up with a new design for a balloon element in the site. The new design could very easily be converted to code and even better, we were able to split it into two different objects to create even greater reusability throughout our code.
 
-![The old, visually slightly more complex balloon](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_balloon_old.png) The old, visually slightly more complex balloon
+![The old, visually slightly more complex balloon](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_balloon_old.png)
+The old, visually slightly more complex balloon
 
-![The new balloon, it even comes in two different forms and more flexibility with the elements inside it](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_balloon_new_1.png) The new balloon, it even comes in two different forms and more flexibility with the elements inside it
+![The new balloon, it even comes in two different forms and more flexibility with the elements inside it](https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/style_guide_balloon_new_1.png)
+The new balloon, it even comes in two different forms and more flexibility with the elements inside it
 
 ## Everybody wins
 One of our final goals is making the Style Guide a shared effort between the Development, Marketing and Design departments. Having a multidisciplinary User Experience team at Printdeal.com is a great step towards that. It&rsquo;s never easy, but always completely worth it, because we feel very confident in reaching the goals we set ourselves: _Always be impressive_!
