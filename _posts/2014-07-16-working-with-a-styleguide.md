@@ -60,7 +60,7 @@ The best thing about having a style guide the way we do, I think, is that you ca
 ![The old, visually slightly more complex balloon](/img/2014-07-16-style_guide_balloon_old.png)
 The old, visually slightly more complex balloon
 
-![The new balloon, it even comes in two different forms and more flexibility with the elements inside it](/img/2014-07-16-style_guide_balloon_new_1.png)
+![The new balloon, it even comes in two different forms and more flexibility with the elements inside it](/img/2014-07-16-style_guide_balloon_new.png)
 The new balloon, it even comes in two different forms and more flexibility with the elements inside it
 
 ## Everybody wins
