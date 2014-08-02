@@ -26,7 +26,7 @@ There are many arguments to create and actively use a style guide when working o
 5. ### Reference for stakeholders
    Stakeholders (e.g. Marketeers, Managers) can browse through the pattern library and see if an item they want can be created with little effort, or that a larger effort is needed because it does not exist yet. It's about __managing expectations__.
 
-6. The company as a knowledge institute
+6. ### The company as a knowledge institute
    A well designed pattern library can be a real showpiece towards clients or future employees (or anyone who's interested, for that matter). People can see you take your job very seriously and even that __you're doing a good job__. See some real world examples:
 
    - [Mailchimp Pattern Library](http://ux.mailchimp.com/patterns/)
@@ -34,7 +34,7 @@ There are many arguments to create and actively use a style guide when working o
    - [Firefox OS Guidelines](http://www.mozilla.org/en-US/styleguide/products/firefox-os/)
    - [A List Apart Pattern Library](http://patterns.alistapart.com/)
 
-7. Quick start for new collegues
+7. ### Quick start for new collegues
    When you've welcomed a new member to the team it's nice just to show him/her the library and let him/her browse around for a while to get a feeling with the project and the company.
 
 ## Where to start
