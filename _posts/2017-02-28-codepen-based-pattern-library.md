@@ -5,7 +5,7 @@ title: CodePen based Pattern Library
 
 Today I was working on a side project that could benefit from a little blog on
 the side. The project itself is a Rails application, but the blog will run on a
-subdomain as a Jekyll&hyphen;based blog. For brand consistency I would like
+subdomain as a Jekyll&#45;based blog. For brand consistency I would like
 both applications to share the same base CSS. While working on different
 components in CodePen, I found myself using other
 [Pens as resources](https://blog.codepen.io/documentation/editor/adding-external-resources/#other-pens)
