@@ -28,7 +28,7 @@ could probably be the order in which things could happen:
 3. Some application that ties all of this together. CodePen has
     [an excellent API](https://blog.codepen.io/documentation/api/url-extensions/)
     for getting contents of a pen in any format you like. This application
-    could fetch all the different Pens CSS and tie them together in one ore
+    could fetch all the different Pens CSS and tie them together in one or
     more stylesheets.
 4. __BONUS__  What if you want to tie all these components together in one website?
     Imagine that you&rsquo;d have a single site that consists of a couple of static
