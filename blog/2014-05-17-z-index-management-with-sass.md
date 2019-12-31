@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Z-index management with SASS
+tags: post
+permalink: /2014-05-z-index-management-with-sass/
 ---
 
 Large projects can suffer from complex UI components and external libraries for sliders etc. Here you are with your carefully created library and sliders are moving over modals, buttons become unresponsive to interactions because some element is placed on top of them. We need `z-index` management.
@@ -42,18 +44,17 @@ As you can see, there's a total of 3 different priorities. We can use this to ca
 
 ## The function
 
-{% highlight scss %}
+<pre>
 $num-zindex-priorities: 3;
 
 @function calculate-z-index($priority) {
     @return $num-zindex-priorities - $priority;
 }
-{% endhighlight %}
-
+</pre>
 
 ## Usage example
 
-{% highlight scss %}
+<pre>
 .Modal {
     z-index: calculate-z-index(1);
 }
@@ -65,11 +66,11 @@ $num-zindex-priorities: 3;
 .PageHead__Nav {
     z-index: calculate-z-index(3);
 }
-{% endhighlight %}
+</pre>
 
 This will be compiled to:
 
-{% highlight css %}
+<pre>
 .Modal {
     z-index: 2;
 }
@@ -81,6 +82,6 @@ This will be compiled to:
 .PageHead__Nav {
     z-index: 0;
 }
-{% endhighlight %}
+</pre>
 
 _Of course this is a hack, but sometimes we need hacks._

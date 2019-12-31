@@ -1,6 +1,8 @@
 ---
 layout: post
 title: On using FastClick
+tags: post
+permalink: /2013-08-on-using-fastclick/
 ---
 
 <p>One of the goals I set for this blog is for it to be fast. That involves several techniques, like concatenating and minifying stylesheets and scripts, and gzipping contents and files. But for mobile (touch) users there’s one more plus: FastClick!</p>
@@ -15,27 +17,28 @@ title: On using FastClick
 
 <h3>The setup</h3>
 <p>At the bottom of the page I include a single javascript file which runs as soon as it is loaded. The file contains one Immediately-Invoked Function Expression (IIFE). That function looks roughly like this:</p>
-<pre><code>(function (window, document) {
+<pre>&lt;code>(function (window, document) {
     "use strict";
 
     var scriptInclude = function () {
-            <span class="code-comment">// do ScriptInclude function here</span>
+            &lt;span class="code-comment">// do ScriptInclude function here&lt;/span>
         },
 
         includefastClick = function () {
-            <span class="code-comment">// to determine if FastClick is needed
+            &lt;span class="code-comment">// to determine if FastClick is needed
             // and if so, make sure it is included
-            // and executed</span>
+            // and executed&lt;/span>
         };
 
     includefastClick();
-}(this, document));</code></pre>
+
+}(this, document));&lt;/code></pre>
 
 <h3>Checking for touch support</h3>
 <p>Since we only include FastClick for devices that support touch, we should check for that. <a href="http://modernizr.com/download/">Modernizr</a> sticks to the following rule, so I’ll follow that.</p>
-<pre><code>var isTouchDevice = 
-    ("ontouchstart" in window) 
-    || window.DocumentTouch 
+<pre><code>var isTouchDevice =
+    ("ontouchstart" in window)
+    || window.DocumentTouch
     &amp;&amp; document instanceof DocumentTouch;</code></pre>
 <p>If this returns true, we know we have to load the fastclick.js file. Otherwise we can just continue with other stuff, like pooring yourself a nice cup of coffee. So the inner workings of <code>includeFastClick</code> are like this:</p>
 <pre><code>if (isTouchDevice) {
@@ -80,6 +83,7 @@ title: On using FastClick
             document.head.appendChild(script);
         }
     };
+
 }());</code></pre>
 
 <h3>Last steps</h3>

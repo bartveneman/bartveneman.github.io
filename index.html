@@ -1,20 +1,26 @@
 ---
+title: 🏠
 layout: default
-title: Home
 ---
 
-<div class="M">
-    <h1>Bart Veneman</h1>
-    <p>Bart Veneman is front-end developer/architect, consultant and speaker working at <a href="/">Printdeal.com</a>.</p>
-</div>
+<article>
+	<h1>Bart Veneman</h1>
+	<p>
+		Creator of
+		<a href="https://www.projectwallace.com" rel="external noopener"
+			>Project Wallace</a
+		>, analytics for CSS. &lt;noscript>-fanboy. Serverless clearfix engineer. I
+		can lift node_modules twice my own weight.
+	</p>
+</article>
 
-<ol class="E M">
-    {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">
-                <time>{{ post.date | date_to_long_string }}</time>
-                <h3 class="text-truncate">{{ post.title }}</h3>
-            </a>
-        </li>
-    {% endfor %}
+<ol>
+	{%- for page in collections.post -%}
+	<li>
+		<a href="{{ page.data.permalink }}">
+			<h3>{{ page.data.title }}</h3>
+			<time>{{page.date}}</time>
+		</a>
+	</li>
+	{%- endfor -%}
 </ol>

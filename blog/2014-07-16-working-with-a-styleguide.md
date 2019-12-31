@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Working with a styleguide
+tags: post
+permalink: /2014-07-working-with-a-styleguide/
 ---
 
 A style guide is a great reference for creating an online platform. At Printdeal.com we&rsquo;re currently working on a complete new platform, based on frameworks and infrastructures like Symphony2 and the Amazon AWS cloud. Luckily, we&rsquo;re not neglecting the frontend. Responsive, performance and architecture: we got it all! And all of this based on a single thing: the Style Guide.
@@ -12,22 +14,28 @@ A style guide is a great reference for creating an online platform. At Printdeal
 There are many arguments to create and actively use a style guide when working on a (responsive) website:
 
 1. ### Reference guide
-   The pattern library will always be a __central point for developers__ working with the responsive project to look up what that object was called that vertically aligns two elements. He'll quickly see that it's the Flag object and how it should be implemented.
+
+   The pattern library will always be a **central point for developers** working with the responsive project to look up what that object was called that vertically aligns two elements. He'll quickly see that it's the Flag object and how it should be implemented.
 
 2. ### Shared terminology
-   Whether you're a designer, a developer, Product Owner or a member of the Management Team: if all people use the same names for the same stuff, communication will go a lot smoother. __Less mistakes__ equals less time to develop equals more time to work on other items.
+
+   Whether you're a designer, a developer, Product Owner or a member of the Management Team: if all people use the same names for the same stuff, communication will go a lot smoother. **Less mistakes** equals less time to develop equals more time to work on other items.
 
 3. ### More reliable task estimates
-   When developers and designers use a pattern library as a __starting point__ for a task, they can agree on what __elements they can reuse__ and therefore come up with more reliable task estimates.
+
+   When developers and designers use a pattern library as a **starting point** for a task, they can agree on what **elements they can reuse** and therefore come up with more reliable task estimates.
 
 4. ### More focus on multidisciplinary aspect
-   As the whole multidisciplinary team will be responsible for maintaining a solid pattern library, it will become a __shared effort__ instead of each discipline working in it's own field.
+
+   As the whole multidisciplinary team will be responsible for maintaining a solid pattern library, it will become a **shared effort** instead of each discipline working in it's own field.
 
 5. ### Reference for stakeholders
-   Stakeholders (e.g. Marketeers, Managers) can browse through the pattern library and see if an item they want can be created with little effort, or that a larger effort is needed because it does not exist yet. It's about __managing expectations__.
+
+   Stakeholders (e.g. Marketeers, Managers) can browse through the pattern library and see if an item they want can be created with little effort, or that a larger effort is needed because it does not exist yet. It's about **managing expectations**.
 
 6. ### The company as a knowledge institute
-   A well designed pattern library can be a real showpiece towards clients or future employees (or anyone who's interested, for that matter). People can see you take your job very seriously and even that __you're doing a good job__. See some real world examples:
+
+   A well designed pattern library can be a real showpiece towards clients or future employees (or anyone who's interested, for that matter). People can see you take your job very seriously and even that **you're doing a good job**. See some real world examples:
 
    - [Mailchimp Pattern Library](http://ux.mailchimp.com/patterns/)
    - [Zurb Foundation](http://foundation.zurb.com/docs/)
@@ -55,6 +63,7 @@ The era of responsive webdesign confronts us with several challenges. As you&rsq
 Therefore, the style guide helps us define and test the small parts. When combining them into the complete website, all should look and work fine.
 
 ## Be flexible
+
 The best thing about having a style guide the way we do, I think, is that you can be 100% flexible. Because all objects have seperate concerns, we can adjust them to our likings and all should be well. Of course this doesn&rsquo;t always apply, but in most cases it works. For example, our designer Elbert came up with a new design for a balloon element in the site. The new design could very easily be converted to code and even better, we were able to split it into two different objects to create even greater reusability throughout our code.
 
 ![The old, visually slightly more complex balloon](/img/2014-07-16-style_guide_balloon_old.png)
@@ -64,4 +73,5 @@ The old, visually slightly more complex balloon
 The new balloon, it even comes in two different forms and more flexibility with the elements inside it
 
 ## Everybody wins
+
 One of our final goals is making the Style Guide a shared effort between the Development, Marketing and Design departments. Having a multidisciplinary User Experience team at Printdeal.com is a great step towards that. It&rsquo;s never easy, but always completely worth it, because we feel very confident in reaching the goals we set ourselves: _Always be impressive_!
