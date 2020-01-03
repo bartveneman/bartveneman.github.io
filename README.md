@@ -3,11 +3,12 @@
 - [x] Post page
 - [x] Homepage
 - [x] Archive page
-- [ ] Styling
+- [x] Styling
 - [ ] RSS Feed
 - [ ] Web monetization
-- [ ] Analytics
+- [x] Analytics
 - [ ] Sitemap
 - [ ] Robots.txt
 - [ ] Canonical urls
 - [ ] Favicon
+- [ ] Auto deploy and preview branches
