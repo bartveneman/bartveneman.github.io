@@ -9,13 +9,13 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
 
 ## HTML
 
-<pre>
-&lt;h1 class="stroked">Colombia&lt;/h1>
-</pre>
+```html
+<h1 class="stroked">Colombia</h1>
+```
 
 ## CSS
 
-<pre>
+```css
 @import url("http://fonts.googleapis.com/css?family=Bangers");
 
 .stroked {
@@ -29,7 +29,7 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
     -.025em  .025em 0 #444,
     .025em  .025em 0 #444;
   color: #fff; /* For non-webkit-browsers */
-</pre>
+```
 
 That last css rule acts as a fallback for browsers that don’t support the `text-stroke`property. It makes the text go white instead of dark gray.
 

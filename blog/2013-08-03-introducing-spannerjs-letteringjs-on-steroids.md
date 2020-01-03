@@ -22,29 +22,28 @@ Spanner.js works at blazing speeds, as [tests on JSPerf.com show](http://jsperf.
 
 Using Spanner.js is quite easy. After including Spanner.js at the bottom of your page, there is a globally available function called _spanner_, which you can use to apply the spanning to your element(s).
 
-<pre>
-&lt;h1 id="kern-me">Text&lt;/h1>
+```html
+<h1 id="kern-me">Text</h1>
 <!-- lots of other stuff here -->
-&lt;script src="path/to/spanner.js">&lt;/script>
-
-</pre>
+<script src="path/to/spanner.js"></script>
+```
 
 Select context and apply spanning:
 
-<pre>
-spanner( document.getElementById("kern-me") );
-</pre>
+```js
+spanner(document.getElementById('kern-me'))
+```
 
 And voila, you’re done! The resulting html should be like this:
 
-<pre>
-&lt;h1 id="kern-me">
-    &lt;span class="char1">T&lt;/span>
-    &lt;span class="char2">e&lt;/span>
-    &lt;span class="char5">x&lt;/span>
-    &lt;span class="char4">t&lt;/span>
-&lt;/h1>
-</pre>
+```html
+<h1 id="kern-me">
+	<span class="char1">T</span>
+	<span class="char2">e</span>
+	<span class="char5">x</span>
+	<span class="char4">t</span>
+</h1>
+```
 
 View an [example on CodePen](http://codepen.io/bartveneman/pen/FjJmy).
 

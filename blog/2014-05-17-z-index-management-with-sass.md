@@ -44,44 +44,44 @@ As you can see, there's a total of 3 different priorities. We can use this to ca
 
 ## The function
 
-<pre>
+```scss
 $num-zindex-priorities: 3;
 
 @function calculate-z-index($priority) {
-    @return $num-zindex-priorities - $priority;
+	@return $num-zindex-priorities - $priority;
 }
-</pre>
+```
 
 ## Usage example
 
-<pre>
+```scss
 .Modal {
-    z-index: calculate-z-index(1);
+	z-index: calculate-z-index(1);
 }
 
 .Modal__Backdrop {
-    z-index: calculate-z-index(2);
+	z-index: calculate-z-index(2);
 }
 
 .PageHead__Nav {
-    z-index: calculate-z-index(3);
+	z-index: calculate-z-index(3);
 }
-</pre>
+```
 
 This will be compiled to:
 
-<pre>
+```scss
 .Modal {
-    z-index: 2;
+	z-index: 2;
 }
 
 .Modal__Backdrop {
-    z-index: 1;
+	z-index: 1;
 }
 
 .PageHead__Nav {
-    z-index: 0;
+	z-index: 0;
 }
-</pre>
+```
 
 _Of course this is a hack, but sometimes we need hacks._
