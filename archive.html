@@ -3,7 +3,7 @@ layout: default
 ---
 
 <ol>
-	{% assign posts = collections.post | reverse %} {%- for page in posts -%}
+	{%- assign posts = collections.post | reverse -%} {%- for page in posts -%}
 	<li>
 		<a href="{{ page.data.permalink }}">
 			<h3>{{ page.data.title }}</h3>
