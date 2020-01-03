@@ -1,14 +1,15 @@
 ---
 layout: default
+title: Archive
 ---
 
-<ol>
+<h1>Archive</h1>
+<p>A collection of all my posts.</p>
+
+<ol class="unstyled">
 	{%- assign posts = collections.post | reverse -%} {%- for page in posts -%}
 	<li>
-		<a href="{{ page.data.permalink }}">
-			<h3>{{ page.data.title }}</h3>
-			<time>{{ page.date }}</time>
-		</a>
+		<h3><a href="{{ page.data.permalink }}">{{ page.data.title }}</a></h3>
 	</li>
 	{%- endfor -%}
 </ol>
