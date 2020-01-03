@@ -1,7 +1,8 @@
 # bartveneman.dev
 
 - [x] Post page
-- [ ] Homepage
+- [x] Homepage
+- [x] Archive page
 - [ ] Styling
 - [ ] RSS Feed
 - [ ] Web monetization

@@ -1,9 +1,8 @@
 ---
-title: 🏠
 layout: default
 ---
 
-<article>
+<aside>
 	<h1>Bart Veneman</h1>
 	<p>
 		Creator of
@@ -12,15 +11,4 @@ layout: default
 		>, analytics for CSS. &lt;noscript>-fanboy. Serverless clearfix engineer. I
 		can lift node_modules twice my own weight.
 	</p>
-</article>
-
-<ol>
-	{%- for page in collections.post -%}
-	<li>
-		<a href="{{ page.data.permalink }}">
-			<h3>{{ page.data.title }}</h3>
-			<time>{{page.date}}</time>
-		</a>
-	</li>
-	{%- endfor -%}
-</ol>
+</aside>
