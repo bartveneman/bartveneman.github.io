@@ -11,4 +11,4 @@
 - [ ] Robots.txt
 - [ ] Canonical urls
 - [ ] Favicon
-- [ ] Auto deploy and preview branches
+- [x] Auto deploy and preview branches
