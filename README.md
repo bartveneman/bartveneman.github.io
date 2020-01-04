@@ -4,7 +4,7 @@
 - [x] Homepage
 - [x] Archive page
 - [x] Styling
-- [ ] RSS Feed
+- [ ] RSS/Atom Feed
 - [x] Web monetization
 - [x] Analytics
 - [ ] Sitemap
@@ -12,3 +12,5 @@
 - [ ] Canonical urls
 - [x] Favicon
 - [x] Auto deploy and preview branches
+- [ ] Auto-generate slug based on date + title
+- [x] Run Lighthouse tests on Zeit
