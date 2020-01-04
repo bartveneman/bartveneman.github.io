@@ -67,7 +67,7 @@ According to [several(http://trentwalton.com/2012/06/19/fluid-type/) [studies](h
 
 ```css
 p {
-	max-width: 34em; /* That&rsquo;s about 68 characters */
+	max-width: 34em; /* That's about 68 characters */
 }
 ```
 
