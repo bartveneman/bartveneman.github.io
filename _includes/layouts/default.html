@@ -6,10 +6,10 @@
 		<title>
 			{%- if title -%} {{ title }} - {%- endif -%}veneman.dev
 		</title>
-		<link
-			rel="stylesheet"
-			href="https://codepen.io/bartveneman/pen/BaymVob.css"
-		/>
+		{% capture css %} {% include style.css %} {% endcapture %}
+		<style>
+			{{ css | cssmin }}
+		</style>
 		{% if config.INCLUDE_MONETIZATION %}
 		<meta
 			content="$coil.xrptipbot.com/3ieT858jS1KdeVCOIfZVmw"

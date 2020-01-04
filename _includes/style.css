@@ -1,0 +1,142 @@
+@font-face {
+	font-family: 'Linux Libertine';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Linux Libertine O'),
+		url(https://brick.freetls.fastly.net/fonts/linuxlibertine/400.woff)
+			format('woff');
+}
+@font-face {
+	font-family: 'Linux Libertine';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Linux Libertine O Bold'),
+		url(https://brick.freetls.fastly.net/fonts/linuxlibertine/700.woff)
+			format('woff');
+}
+@font-face {
+	font-family: 'Linux Libertine';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Linux Libertine O Italic'),
+		url(https://brick.freetls.fastly.net/fonts/linuxlibertine/400i.woff)
+			format('woff');
+}
+
+html {
+	font-size: 100%;
+	font-family: 'Linux Libertine', 'Georgia', serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	color: #3c3c3c;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+}
+
+a {
+	color: inherit;
+	text-decoration-color: LightSeaGreen;
+}
+
+nav {
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+}
+
+nav a:nth-of-type(2) {
+	margin-top: 3rem;
+	margin-left: auto;
+}
+
+.bio {
+	margin-top: 3rem;
+	color: #666;
+}
+
+.sidebar {
+	padding: 1rem;
+	background-color: whitesmoke;
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+
+p,
+article {
+	line-height: 1.44;
+}
+
+article {
+	font-size: 120%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	font-size: 0.5rem;
+	line-height: 1.1;
+	font-weight: normal;
+}
+
+pre {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	tab-size: 2;
+	font-family: monospace, monospace;
+	white-space: pre-wrap;
+}
+
+@media (min-width: 60rem) {
+	html {
+		font-size: 110%;
+	}
+
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1.6fr;
+		background-image: linear-gradient(90deg, whitesmoke 38.46%, white 38.5%);
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	nav a:nth-of-type(2) {
+		margin-left: 0; /* reset */
+	}
+
+	main {
+		padding: 3rem;
+		margin-right: calc(64vw - 33rem);
+	}
+
+	.sidebar,
+	footer {
+		padding: 3rem;
+		margin-left: calc(36vw - 20rem);
+	}
+}
+
+@media (min-width: 80rem) {
+	html {
+		font-size: calc(80% + 0.4vw);
+	}
+}
+
+.unstyled {
+	list-style: none;
+	padding-left: 0;
+}
