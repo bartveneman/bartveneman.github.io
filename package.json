@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "rm -rf _site; ENV=development eleventy --serve",
-		"build": "eleventy --output public"
+		"build": "eleventy"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.9.0"
