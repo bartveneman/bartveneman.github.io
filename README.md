@@ -5,7 +5,7 @@
 - [x] Archive page
 - [x] Styling
 - [ ] RSS Feed
-- [ ] Web monetization
+- [x] Web monetization
 - [x] Analytics
 - [ ] Sitemap
 - [ ] Robots.txt

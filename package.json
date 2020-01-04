@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
-		"dev": "ENV=development rm -rf _site; eleventy --serve"
+		"dev": "rm -rf _site; ENV=development eleventy --serve"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.9.0"

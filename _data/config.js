@@ -1,3 +1,4 @@
 module.exports = {
-	FATHOM_ID: process.env.ENV === 'development' ? 'XCHDQWCK' : 'CTMFIKFK'
+	FATHOM_ID: process.env.ENV === 'development' ? 'CTMFIKFK' : 'XCHDQWCK',
+	INCLUDE_MONETIZATION: process.env.ENV !== 'development'
 }
