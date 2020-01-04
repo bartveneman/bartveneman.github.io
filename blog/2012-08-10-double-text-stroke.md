@@ -31,7 +31,7 @@ While watching the 2012 Olympics in London on television I saw BMX riders cyclin
   color: #fff; /* For non-webkit-browsers */
 ```
 
-That last css rule acts as a fallback for browsers that don’t support the `text-stroke`property. It makes the text go white instead of dark gray.
+That last css rule acts as a fallback for browsers that don’t support the `text-stroke` property. It makes the text go white instead of dark gray.
 
 The effect doesn’t look really great at large font-sizes, but for the time being it will do. I am aware that there are several methods to accomplish this kind of effect, but it seemed nice to give this a try.
 
