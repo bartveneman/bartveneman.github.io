@@ -1,5 +1,0 @@
-name: "Bart Veneman - Front-end webdevelopment, performance, architecture and responsive webdesign"
-url: "http://bveneman.nl"
-permalink: pretty
-markdown: kramdown
-exclude: ["package.json", "gulpfile.js", "node_modules"]
