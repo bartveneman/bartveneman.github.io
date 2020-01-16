@@ -14,3 +14,4 @@
 - [x] Auto deploy and preview branches
 - [ ] Auto-generate slug based on date + title
 - [x] Run Lighthouse tests on Zeit
+-[ ] add /uses page
