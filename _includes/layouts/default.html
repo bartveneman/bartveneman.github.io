@@ -38,8 +38,8 @@
 						/>
 					</svg>
 				</a>
-				<a href="/">Home</a>
-				<a href="/archive">Archive</a>
+				<a href="/" rel="prefetch">Home</a>
+				<a href="/archive" rel="prefetch">Archive</a>
 			</nav>
 			<div class="bio">
 				<strong>Bart Veneman</strong>
@@ -57,10 +57,21 @@
 		</main>
 		<footer>
 			<p>
-				You can find me on <a href="https://github.com/bartveneman">GitHub</a>,
-				<a href="https://twitter.com/bartveneman" rel="noopener">Twitter</a>,
-				<a href="https://codepen.io/bartveneman" rel="noopener">CodePen</a> and
-				<a href="https://www.projectwallace.com/~bartveneman">Project Wallace</a
+				You can find me on
+				<a href="https://github.com/bartveneman" rel="external noopener"
+					>GitHub</a
+				>,
+				<a href="https://twitter.com/bartveneman" rel="noopener external"
+					>Twitter</a
+				>,
+				<a href="https://codepen.io/bartveneman" rel="noopener external"
+					>CodePen</a
+				>
+				and
+				<a
+					href="https://www.projectwallace.com/~bartveneman"
+					rel="noopener external"
+					>Project Wallace</a
 				>!
 			</p>
 		</footer>
@@ -84,5 +95,19 @@
 			fathom('trackPageview')
 		</script>
 		<!-- / Fathom -->
+
+		<script>
+			Array.from(document.querySelectorAll('a[rel="prefetch"]')).forEach(
+				function(link) {
+					link.addEventListener(
+						'mouseenter',
+						function(event) {
+							fetch(event.target.href)
+						},
+						{ once: true }
+					)
+				}
+			)
+		</script>
 	</body>
 </html>
