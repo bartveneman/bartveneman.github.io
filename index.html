@@ -17,3 +17,13 @@ layout: default
 		<a href="/uses" rel="prefetch">things I use</a> to move the web forward.
 	</p>
 </article>
+
+<script>
+	Array.from(document.querySelectorAll('a[rel="prefetch"]')).forEach(function(
+		link
+	) {
+		link.addEventListener('mouseenter', function(event) {
+			var href = event.target.href
+		})
+	})
+</script>

@@ -107,7 +107,7 @@ pre {
 	}
 
 	body {
-		--ratio: 1.55;
+		--ratio: 1.5;
 		--main-width: 33rem;
 		--sidebar-width: calc(var(--main-width) / var(--ratio));
 		display: grid;
