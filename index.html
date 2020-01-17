@@ -11,4 +11,20 @@ layout: default
 		>, analytics for CSS. &lt;noscript>-fanboy. Serverless clearfix engineer. I
 		can lift node_modules twice my own weight.
 	</p>
+	<p>
+		Feel free to read some very
+		<a href="/archive" onmouseenter="prefetch('/archive')"
+			>outdated blog posts</a
+		>, or see the <a href="/uses">things I use</a> to move the web forward.
+	</p>
 </article>
+
+<script>
+	Array.from(document.querySelectorAll('a[rel="prefetch"]')).forEach(function(
+		link
+	) {
+		link.addEventListener('mouseenter', function(event) {
+			var href = event.target.href
+		})
+	})
+</script>
