@@ -24,7 +24,7 @@
 	<body>
 		<div class="sidebar">
 			<nav>
-				<a href="/">
+				<a href="/" rel="prefetch">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="42"
@@ -33,13 +33,14 @@
 					>
 						<title>Bart Veneman</title>
 						<path
-							fill="#e1e1e1"
+							fill="#d1d1d1"
 							d="M-350.491 587.388a3.256 3.256 0 00-.092-.226l-.007-.016a3.336 3.336 0 00-6.176 2.51c.036.106.077.202.125.303a5.431 5.431 0 01-5.077 7.358 5.432 5.432 0 01-5.433-5.433 12.04 12.04 0 00-3.333-8.333 12.073 12.073 0 00-8.772-3.76c-1.997 0-3.879.482-5.539 1.337V575.986h-.016a3.288 3.288 0 00-6.541 0h-.008v.104a2.83 2.83 0 00.001.454v15.336c0 6.679 5.421 12.091 12.1 12.091a12.07 12.07 0 008.772-3.761 12.067 12.067 0 008.761 3.761c6.68 0 12.093-5.414 12.093-12.094a11.997 11.997 0 00-.855-4.489h-.003zm-28.768 9.924a5.434 5.434 0 01-5.437-5.432c0-3 2.435-5.432 5.437-5.432a5.435 5.435 0 015.441 5.432 5.434 5.434 0 01-5.436 5.432h-.005z"
 						/>
 					</svg>
 				</a>
 				<a href="/" rel="prefetch">Home</a>
 				<a href="/archive" rel="prefetch">Archive</a>
+				<a href="/uses" rel="prefetch">Uses</a>
 			</nav>
 			<div class="bio">
 				<strong>Bart Veneman</strong>
@@ -96,6 +97,7 @@
 		</script>
 		<!-- / Fathom -->
 
+		<!-- Very rudimentary prefetch script: prefetch a page when a link is hovered -->
 		<script>
 			Array.from(document.querySelectorAll('a[rel="prefetch"]')).forEach(
 				function(link) {
