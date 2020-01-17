@@ -4,6 +4,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.setTemplateFormats(['md', 'html'])
 
 	eleventyConfig.addPassthroughCopy('img')
+	eleventyConfig.addPassthroughCopy('fonts')
 	eleventyConfig.addPassthroughCopy('*.png')
 	eleventyConfig.addPassthroughCopy('favicon.ico')
 

@@ -9,7 +9,11 @@ title: Archive
 <ol class="unstyled">
 	{%- assign posts = collections.post | reverse -%} {%- for page in posts -%}
 	<li>
-		<h3><a href="{{ page.data.permalink }}">{{ page.data.title }}</a></h3>
+		<h3>
+			<a href="{{ page.data.permalink }}" rel="prefetch"
+				>{{ page.data.title }}</a
+			>
+		</h3>
 	</li>
 	{%- endfor -%}
 </ol>
