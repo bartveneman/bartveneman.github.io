@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>
-			{%- if title -%} {{ title }} - {%- endif -%}veneman.dev
+			{% if title %}{{ title }} - {% endif %}veneman.dev
 		</title>
 		{% capture css %} {% include style.css %} {% endcapture %}
 		<style>
