@@ -1,8 +1,5 @@
 ---
-layout: post
 title: An imageless web
-tags: post
-permalink: /2013-10-an-imageless-web/
 ---
 
 A picture says a thousand words. Since I recently installed Next Browser on my Android device, I know no picture can say a thousand words too. Browsing with images disabled is pretty worthless. It’s up to us developers to make the best of it.

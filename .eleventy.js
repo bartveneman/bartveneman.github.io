@@ -14,4 +14,8 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('cssmin', function(code) {
 		return new cleanCss({}).minify(code).styles
 	})
+
+	eleventyConfig.addCollection('posts', function(collection) {
+		return collection.getFilteredByGlob('blog/*.md').reverse()
+	})
 }

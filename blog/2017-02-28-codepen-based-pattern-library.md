@@ -1,8 +1,5 @@
 ---
-layout: post
 title: CodePen based Pattern Library
-tags: post
-permalink: /2017-02-codepen-based-pattern-library/
 ---
 
 Today I was working on a side project that could benefit from a little blog on

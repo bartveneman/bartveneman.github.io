@@ -7,12 +7,10 @@ title: Archive
 <p>A collection of all my posts.</p>
 
 <ol class="unstyled">
-	{%- assign posts = collections.post | reverse -%} {%- for page in posts -%}
+	{%- for page in collections.posts -%}
 	<li>
 		<h3>
-			<a href="{{ page.data.permalink }}" rel="prefetch"
-				>{{ page.data.title }}</a
-			>
+			<a href="{{ page.url }}" rel="prefetch">{{ page.data.title }}</a>
 		</h3>
 	</li>
 	{%- endfor -%}
