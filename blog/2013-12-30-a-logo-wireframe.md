@@ -1,8 +1,5 @@
 ---
-layout: post
 title: A logo wireframe
-tags: post
-permalink: /2013-12-a-logo-wireframe/
 ---
 
 Since the redesign of my website (somewhere october 2013) I have been using a new logo, as can be seen in the upper left corner. Although not being a graphic designer, I think it works really well: it has my initials, it is simple and it doesn’t look too bad. There is only one more thing I wanted to do: wireframe it.

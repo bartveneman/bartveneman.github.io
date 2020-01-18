@@ -1,8 +1,5 @@
 ---
-layout: post
 title: Working with a styleguide
-tags: post
-permalink: /2014-07-working-with-a-styleguide/
 ---
 
 A style guide is a great reference for creating an online platform. At Printdeal.com we&rsquo;re currently working on a complete new platform, based on frameworks and infrastructures like Symphony2 and the Amazon AWS cloud. Luckily, we&rsquo;re not neglecting the frontend. Responsive, performance and architecture: we got it all! And all of this based on a single thing: the Style Guide.

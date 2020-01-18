@@ -1,8 +1,5 @@
 ---
-layout: post
 title: On using FastClick
-tags: post
-permalink: /2013-08-on-using-fastclick/
 ---
 
 One of the goals I set for this blog is for it to be fast. That involves several techniques, like concatenating and minifying stylesheets and scripts, and gzipping contents and files. But for mobile (touch) users there’s one more plus: FastClick!

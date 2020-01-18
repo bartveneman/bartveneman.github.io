@@ -12,7 +12,7 @@
 - [ ] Canonical urls
 - [x] Favicon
 - [x] Auto deploy and preview branches
-- [ ] Auto-generate slug based on date + title
+- [x] Auto-generate slug based on date + title
 - [x] Run Lighthouse tests on Zeit
 - [x] add /uses page
 - [ ] 'Edit this page' link on all pages

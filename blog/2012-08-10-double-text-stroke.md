@@ -1,8 +1,5 @@
 ---
-layout: post
 title: CSS tip - double text stroke
-tags: post
-permalink: /2012-08-double-text-stroke/
 ---
 
 While watching the 2012 Olympics in London on television I saw BMX riders cycling on their tiny bikes with amazing speeds. The shirt of the [Colombian riders](https://www.google.com/search?q=bmx+colombia) made me come up with the following double text stroke with css.
