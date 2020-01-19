@@ -85,6 +85,14 @@ article {
 	font-size: 120%;
 }
 
+h1 {
+	line-height: 1.33;
+}
+
+h1 + time {
+	color: #666;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -96,7 +104,8 @@ img {
 pre {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	tab-size: 1;
+	tab-size: 2;
+	-moz-tab-size: 2;
 	font-family: monospace, monospace;
 	line-height: 1.3;
 	border: 1px solid lightgrey;
