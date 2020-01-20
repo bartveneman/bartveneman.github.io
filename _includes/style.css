@@ -113,14 +113,10 @@ pre {
 	padding: 0.15em 1rem;
 }
 
-p code::before,
-p code::after {
-	content: '`';
-}
-
 p code {
 	color: #2071b2;
 	white-space: nowrap;
+	background-color: hsl(180, 20%, 95%);
 }
 
 @media (min-width: 60rem) {
