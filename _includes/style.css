@@ -27,7 +27,7 @@ html {
 	font-family: 'PT Serif', 'Georgia', serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	color: #3c3c3c;
+	overflow-x: hidden;
 }
 
 * {
@@ -36,7 +36,6 @@ html {
 
 body {
 	margin: 0;
-	background-color: white;
 }
 
 a {
@@ -63,12 +62,10 @@ nav a:nth-of-type(2) {
 
 .bio {
 	margin-top: 3rem;
-	color: #666;
 }
 
 .sidebar {
 	padding: 1rem;
-	background-color: whitesmoke;
 }
 
 main,
@@ -89,10 +86,6 @@ h1 {
 	line-height: 1.33;
 }
 
-h1 + time {
-	color: #666;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -108,15 +101,13 @@ pre {
 	-moz-tab-size: 2;
 	font-family: monospace, monospace;
 	line-height: 1.3;
-	border: 1px solid lightgrey;
+	border: 1px solid;
 	border-radius: 2px;
 	padding: 0.15em 1rem;
 }
 
 p code {
-	color: #2071b2;
 	white-space: nowrap;
-	background-color: hsl(180, 20%, 95%);
 }
 
 @media (min-width: 60rem) {
@@ -153,7 +144,6 @@ p code {
 	.sidebar,
 	footer {
 		grid-column: 2 / 3;
-		background-color: whitesmoke;
 	}
 
 	ol,
@@ -171,4 +161,82 @@ p code {
 .unstyled {
 	list-style: none;
 	padding-left: 0;
+}
+
+/* COLOR SCHEME */
+body {
+	color: hsl(200, 30%, 20%);
+	background-color: hsl(180, 20%, 97%);
+}
+
+.sidebar {
+	background: hsl(200, 10%, 90%);
+}
+
+.logo {
+	fill: hsl(200, 30%, 60%);
+}
+
+@media (min-width: 60rem) {
+	footer {
+		background-color: hsl(200, 10%, 90%);
+	}
+}
+
+.bio,
+footer {
+	color: hsl(200, 20%, 50%);
+}
+
+h1 + time {
+	color: hsl(200, 20%, 50%);
+}
+
+p code {
+	color: hsl(200, 50%, 40%);
+	background-color: hsl(180, 20%, 95%);
+}
+
+pre {
+	border-color: hsl(200, 10%, 80%);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	/* Thinner fonts on dark mode: https://css-tricks.com/dark-modes-with-css/#article-header-id-2 */
+	html {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	body {
+		color: hsl(200, 10%, 80%);
+		background-color: hsl(200, 30%, 10%);
+	}
+
+	.sidebar,
+	footer {
+		background: hsl(200, 40%, 7%);
+	}
+
+	.logo {
+		fill: hsl(200, 50%, 40%);
+	}
+
+	.bio,
+	footer {
+		color: hsl(200, 20%, 60%);
+	}
+
+	h1 + time {
+		color: hsl(200, 20%, 50%);
+	}
+
+	p code {
+		background-color: hsl(200, 40%, 7%);
+		color: hsl(200, 50%, 60%);
+	}
+
+	pre {
+		border-color: hsl(200, 30%, 30%);
+	}
 }
