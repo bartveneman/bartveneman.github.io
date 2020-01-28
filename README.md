@@ -15,5 +15,5 @@
 - [x] Auto-generate slug based on date + title
 - [x] Run Lighthouse tests on Zeit
 - [x] add /uses page
-- [ ] 'Edit this page' link on all pages
+- [x] 'Edit this page' link on all pages
 - [x] Dark mode, depending on user's OS preference
