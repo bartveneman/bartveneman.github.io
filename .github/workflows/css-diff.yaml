@@ -1,8 +1,6 @@
 name: CSS Workflow
 
-on:
-  pull_request: # only run this action on pull requests
-    branches: [master] # and only to the master branch
+on: pull_request
 
 jobs:
   cssDiff:
