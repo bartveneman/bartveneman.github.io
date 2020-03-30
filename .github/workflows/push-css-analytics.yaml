@@ -1,0 +1,15 @@
+name: CSS Workflow
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  pushCss:
+    name: Push CSS to projectwallace.com
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Push CSS to Project Wallace
+        run: "curl https://www.projectwallace.com/webhooks/v1/imports?token=${{ secrets.PROJECT_WALLACE_TOKEN }} --request POST --header 'Content-Type: text/css' --data @_includes/style.css"
