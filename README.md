@@ -17,3 +17,4 @@
 - [x] add /uses page
 - [x] 'Edit this page' link on all pages
 - [x] Dark mode, depending on user's OS preference
+- [ ] Syntax highlighting
