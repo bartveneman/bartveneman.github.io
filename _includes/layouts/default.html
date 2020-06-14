@@ -1,122 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			{% if title %}{{ title }} - {% endif %}veneman.dev
-		</title>
-		{% capture css %} {% include style.css %} {% endcapture %}
-		<style>
-			{{ css | cssmin }}
-		</style>
-		{% if config.INCLUDE_MONETIZATION %}
-		<meta
-			content="$coil.xrptipbot.com/3ieT858jS1KdeVCOIfZVmw"
-			name="monetization"
-		/>
-		{% endif %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if title %}{{ title }} - {% endif %}veneman.dev
+    </title>
+    {% capture css %} {% include style.css %} {% endcapture %}
+    <style>
+      {{ css | cssmin }}
+    </style>
+    {% if config.INCLUDE_MONETIZATION %}
+    <meta
+      content="$coil.xrptipbot.com/3ieT858jS1KdeVCOIfZVmw"
+      name="monetization"
+    />
+    {% endif %}
 
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="canonical" href="https://veneman.dev{{ page.url }}" />
-	</head>
-	<body>
-		<div class="sidebar">
-			<nav>
-				<a href="/" rel="prefetch">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="42"
-						height="31"
-						viewBox="-391.5 573 42 31"
-						class="logo"
-					>
-						<title>Bart Veneman</title>
-						<path
-							d="M-350.491 587.388a3.256 3.256 0 00-.092-.226l-.007-.016a3.336 3.336 0 00-6.176 2.51c.036.106.077.202.125.303a5.431 5.431 0 01-5.077 7.358 5.432 5.432 0 01-5.433-5.433 12.04 12.04 0 00-3.333-8.333 12.073 12.073 0 00-8.772-3.76c-1.997 0-3.879.482-5.539 1.337V575.986h-.016a3.288 3.288 0 00-6.541 0h-.008v.104a2.83 2.83 0 00.001.454v15.336c0 6.679 5.421 12.091 12.1 12.091a12.07 12.07 0 008.772-3.761 12.067 12.067 0 008.761 3.761c6.68 0 12.093-5.414 12.093-12.094a11.997 11.997 0 00-.855-4.489h-.003zm-28.768 9.924a5.434 5.434 0 01-5.437-5.432c0-3 2.435-5.432 5.437-5.432a5.435 5.435 0 015.441 5.432 5.434 5.434 0 01-5.436 5.432h-.005z"
-						/>
-					</svg>
-				</a>
-				<a href="/" rel="prefetch">Home</a>
-				<a href="/archive" rel="prefetch">Archive</a>
-				<a href="/uses" rel="prefetch">Uses</a>
-			</nav>
-			<div class="bio">
-				<strong>Bart Veneman</strong>
-				<p>
-					Creator of
-					<a href="https://www.projectwallace.com" rel="external noopener"
-						>Project Wallace</a
-					>, analytics for CSS. &lt;noscript>-fanboy. Serverless clearfix
-					engineer. I can lift node_modules twice my own weight.
-				</p>
-			</div>
-		</div>
-		<main>
-			{{ content }}
-		</main>
-		<footer>
-			<p>
-				You can find me on
-				<a href="https://github.com/bartveneman" rel="external noopener"
-					>GitHub</a
-				>,
-				<a href="https://twitter.com/bartveneman" rel="noopener external"
-					>Twitter</a
-				>,
-				<a href="https://codepen.io/bartveneman" rel="noopener external"
-					>CodePen</a
-				>
-				and
-				<a
-					href="https://www.projectwallace.com/~bartveneman"
-					rel="noopener external"
-					>Project Wallace</a
-				>!
-			</p>
-			<p>
-				<a
-					href="https://github.com/bartveneman/bartveneman.github.io/blob/master/{{ page.inputPath }}"
-					>Edit this page on GitHub</a
-				>
-			</p>
-		</footer>
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="canonical" href="https://veneman.dev{{ page.url }}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <a href="/" rel="prefetch">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="31"
+            viewBox="-391.5 573 42 31"
+            class="logo"
+          >
+            <title>Bart Veneman</title>
+            <path
+              d="M-350.491 587.388a3.256 3.256 0 00-.092-.226l-.007-.016a3.336 3.336 0 00-6.176 2.51c.036.106.077.202.125.303a5.431 5.431 0 01-5.077 7.358 5.432 5.432 0 01-5.433-5.433 12.04 12.04 0 00-3.333-8.333 12.073 12.073 0 00-8.772-3.76c-1.997 0-3.879.482-5.539 1.337V575.986h-.016a3.288 3.288 0 00-6.541 0h-.008v.104a2.83 2.83 0 00.001.454v15.336c0 6.679 5.421 12.091 12.1 12.091a12.07 12.07 0 008.772-3.761 12.067 12.067 0 008.761 3.761c6.68 0 12.093-5.414 12.093-12.094a11.997 11.997 0 00-.855-4.489h-.003zm-28.768 9.924a5.434 5.434 0 01-5.437-5.432c0-3 2.435-5.432 5.437-5.432a5.435 5.435 0 015.441 5.432 5.434 5.434 0 01-5.436 5.432h-.005z"
+            />
+          </svg>
+        </a>
+        <a href="/" rel="prefetch">Home</a>
+        <a href="/archive" rel="prefetch">Archive</a>
+        <a href="/uses" rel="prefetch">Uses</a>
+      </nav>
+      <div class="bio">
+        <strong>Bart Veneman</strong>
+        <p>
+          Creator of
+          <a href="https://www.projectwallace.com" rel="external noopener"
+            >Project Wallace</a
+          >, analytics for CSS. &lt;noscript>-fanboy. Serverless clearfix
+          engineer. I can lift node_modules twice my own weight.
+        </p>
+      </div>
+    </div>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>
+        You can find me on
+        <a href="https://github.com/bartveneman" rel="external noopener"
+          >GitHub</a
+        >,
+        <a href="https://twitter.com/bartveneman" rel="noopener external"
+          >Twitter</a
+        >,
+        <a href="https://codepen.io/bartveneman" rel="noopener external"
+          >CodePen</a
+        >
+        and
+        <a
+          href="https://www.projectwallace.com/~bartveneman"
+          rel="noopener external"
+          >Project Wallace</a
+        >!
+      </p>
+      <p>
+        <a
+          href="https://github.com/bartveneman/bartveneman.github.io/blob/master/{{ page.inputPath }}"
+          >Edit this page on GitHub</a
+        >
+      </p>
+    </footer>
 
-		<!-- Fathom - simple website analytics - https://usefathom.com -->
-		<script>
-			;(function(f, a, t, h, o, m) {
-				a[h] =
-					a[h] ||
-					function() {
-						;(a[h].q = a[h].q || []).push(arguments)
-					}
-				;(o = f.createElement('script')),
-					(m = f.getElementsByTagName('script')[0])
-				o.async = 1
-				o.src = t
-				o.id = 'fathom-script'
-				m.parentNode.insertBefore(o, m)
-			})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom')
-			fathom('set', 'siteId', '{{ config.FATHOM_ID }}')
-			fathom('trackPageview')
-		</script>
-		<!-- / Fathom -->
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      site="XCHDQWCK"
+      included-domains="veneman.dev"
+      defer
+    ></script>
+    <!-- / Fathom -->
 
-		<!-- Very rudimentary prefetch script: prefetch a page when a link is hovered -->
-		<script>
-			Array.from(document.querySelectorAll('a[rel="prefetch"]')).forEach(
-				function(link) {
-					link.addEventListener(
-						'mouseenter',
-						function(event) {
-							fetch(event.target.href)
-						},
-						{ once: true }
-					)
-				}
-			)
-		</script>
-	</body>
+    <!-- Very rudimentary prefetch script: prefetch a page when a link is hovered -->
+    <script>
+      Array.from(document.querySelectorAll('a[rel="prefetch"]')).forEach(
+        function (link) {
+          link.addEventListener(
+            "mouseenter",
+            function (event) {
+              fetch(event.target.href);
+            },
+            { once: true }
+          );
+        }
+      );
+    </script>
+  </body>
 </html>
