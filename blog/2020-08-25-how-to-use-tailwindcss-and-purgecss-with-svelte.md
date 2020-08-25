@@ -19,6 +19,6 @@ module.exports = {
 }
 ```
 
-This tells PurgeCSS to look at all the `.html`and `.svelte` file in my project. The HTML and Svelte files are the ones containing the CSS class names from Tailwind. PurgeCSS needs to know where the html is, so it can find all the classnames that are used so it can remove the ones that aren't used from the CSS.
+This tells PurgeCSS to look at all the `.html` and `.svelte` file in my project. The HTML and Svelte files are the ones containing the CSS class names from Tailwind. PurgeCSS needs to know where the html is, so it can find all the classnames that are used so it can remove the ones that aren't used from the CSS.
 
 The amazing part of this is that it's built into Tailwind by default!
