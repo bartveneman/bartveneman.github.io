@@ -73,6 +73,13 @@ article {
 	font-size: 120%;
 }
 
+
+hr {
+	margin: 4.5rem 0;
+	border: none;
+	height: 2px;
+}
+
 h1 {
 	line-height: 1.33;
 }
@@ -166,7 +173,7 @@ body {
 	background-color: hsl(180, 20%, 97%);
 }
 
-.sidebar {
+.sidebar, hr {
 	background: hsl(200, 10%, 90%);
 }
 
@@ -188,7 +195,8 @@ time {
 	color: hsl(200, 20%, 50%);
 }
 
-p code {
+p code,
+li code {
 	color: hsl(200, 50%, 40%);
 	background-color: hsl(180, 20%, 95%);
 }
