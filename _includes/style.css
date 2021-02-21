@@ -166,6 +166,10 @@ p code {
 	padding-left: 0;
 }
 
+del {
+	opacity: 0.5;
+}
+
 /* COLOR SCHEME */
 
 body {
