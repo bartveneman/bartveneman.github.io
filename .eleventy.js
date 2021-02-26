@@ -10,6 +10,7 @@ module.exports = eleventyConfig => {
 
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.html')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.html')
+	eleventyConfig.addLayoutAlias('bookmark', 'layouts/bookmark.html')
 
 	eleventyConfig.addFilter('cssmin', function(code) {
 		return new cleanCss({}).minify(code).styles
@@ -17,5 +18,9 @@ module.exports = eleventyConfig => {
 
 	eleventyConfig.addCollection('posts', function(collection) {
 		return collection.getFilteredByGlob('blog/*.md').reverse()
+	})
+
+	eleventyConfig.addCollection('bookmarks', function(collection) {
+		return collection.getFilteredByGlob('bookmarks/*.md').reverse()
 	})
 }

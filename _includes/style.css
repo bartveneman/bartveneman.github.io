@@ -102,6 +102,19 @@ h1 + time {
 	margin-bottom: 3em;
 }
 
+.inline-list {
+	padding-left: 0;
+}
+
+.inline-list li {
+	display: inline-block;
+	list-style: none;
+}
+
+.inline-list li:not(:last-child)::after {
+	content: ','
+}
+
 @media (min-width: 60em) {
 	h1 + time {
 		margin-top: -3em;
@@ -114,6 +127,10 @@ h1 + time {
 body {
 	color: hsl(200, 30%, 20%);
 	background-color: hsl(180, 20%, 97%);
+}
+
+h1 {
+	color: hsl(200, 40%, 16%);
 }
 
 hr {

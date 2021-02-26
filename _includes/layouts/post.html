@@ -4,9 +4,9 @@ layout: default
 
 <article>
 	<h1>{{ title }}</h1>
-	<time datetime={{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}
-		>{{ page.date | date: "%d %B %Y" }}</time
-	>
+	<time datetime={{ page.date | date: "%Y-%m-%dT%H:%M:%S%z" }}>
+		{{ page.date | date: "%d %B %Y" }}
+	</time>
 
 	{{content}}
 </article>
