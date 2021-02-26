@@ -1,0 +1,17 @@
+---
+layout: default
+title: Bookmarks
+---
+
+<h1>{{ title }}</h1>
+<p>A collection of things worth keeping.</p>
+
+<ol role="list">
+	{%- for page in collections.bookmarks -%}
+	<li>
+		<h3>
+			<a href="{{ page.url }}" rel="prefetch">{{ page.data.title }}</a>
+		</h3>
+	</li>
+	{%- endfor -%}
+</ol>
