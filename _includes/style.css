@@ -188,6 +188,14 @@ img {
 		background-color: hsl(200, 30%, 10%);
 	}
 
+	h1 {
+		color: hsl(200, 12%, 75%);
+	}
+
+	hr {
+		background-color: hsl(200, 20%, 30%);
+	}
+
 	.logo {
 		fill: hsl(200, 50%, 40%);
 	}
@@ -201,7 +209,8 @@ img {
 		color: hsl(200, 20%, 50%);
 	}
 
-	p code {
+	p code,
+	pre {
 		background-color: hsl(200, 40%, 7%);
 		color: hsl(200, 50%, 60%);
 	}
