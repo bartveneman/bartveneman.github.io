@@ -12,11 +12,11 @@ tags:
 
 > TIL: You can use the spellcheck attribute to instruct browsers that, if possible, an element should or should not be checked for spelling errors.
 >
-> Demo: https://codepen.io/matuzo/pen/vYyeYxb?editors=1000
+> Demo: [https://codepen.io/matuzo/pen/vYyeYxb?editors=1000](https://codepen.io/matuzo/pen/vYyeYxb?editors=1000)
 >
-> TIL: https://matuzo.at/til/
+> TIL: [https://matuzo.at/til/](https://matuzo.at/til/)
 >
-> MDN: https://developer.mozilla.org/en-US/docs/Web
+> MDN: [https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/spellcheck](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/spellcheck)
 
 You can use the `spellcheck` attribute to control the browser's spellcheck capability for form inputs or HTML elements with `contenteditable`.
 

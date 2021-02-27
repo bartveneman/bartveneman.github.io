@@ -13,8 +13,8 @@ url: https://twitter.com/stefanjudis/status/1346383989267963904
 >
 > When you now use role, the list-style is removed. 🎉
 >
-> Found in @piccalilli_'s Modern CSS Reset.
+> Found in @piccalilli\_'s Modern CSS Reset.
 >
-> https://piccalil.li/blog/a-modern-
+> [https://piccalil.li/blog/a-modern-css-reset](https://piccalil.li/blog/a-modern-css-reset)
 
 Screenreaders may not see a list (`<ol>` or `<ul>`) when their `list-style` is set to `none`. Add `role="list"` to re-add that semantic.
