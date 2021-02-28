@@ -29,13 +29,17 @@ blockquote {
   line-height: 1.44;
 }
 
+code,
+pre {
+  font-family: monospace, monospace;
+}
+
 p code,
 li code {
   font-size: 110%;
 }
 
 pre {
-  font: monospace, monospace;
   font-weight: 400;
   line-height: 1.3;
 }
