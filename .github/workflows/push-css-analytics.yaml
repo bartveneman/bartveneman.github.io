@@ -2,7 +2,7 @@ name: CSS Workflow
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   pushCss:
@@ -12,4 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Push CSS to Project Wallace
-        run: "curl https://www.projectwallace.com/webhooks/v1/imports?token=${{ secrets.PROJECT_WALLACE_TOKEN }} --request POST --header 'Content-Type: text/css' --data @_includes/style.css"
+        run: |
+          cat _includes/*.css all.css
+          curl https://www.projectwallace.com/api/webhooks/v2/imports?token=${{ secrets.PROJECT_WALLACE_TOKEN }} --request POST --header 'Content-Type: text/plain' --data @all.css"
