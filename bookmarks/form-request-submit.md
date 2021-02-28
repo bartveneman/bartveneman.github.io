@@ -2,7 +2,7 @@
 title: Request submit instead of submitting a form
 url: https://twitter.com/stefanjudis/status/1228255792287141889
 tags:
-  - js
+  - javascript
   - form
   - ux
 ---

@@ -1,5 +1,6 @@
 ---
 title: Submit a form with `fetch()` and no-js fallback
+tags: ['progressive-enhancement', 'html', 'serverless', 'form', 'accessibility']
 ---
 
 TL;DR;

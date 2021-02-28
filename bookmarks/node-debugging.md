@@ -1,7 +1,7 @@
 ---
 title: Debugging Node.js
 tags:
-  - node
+  - nodejs
   - debugging
   - testing
 url: https://twitter.com/stefanjudis/status/1285486856830955520

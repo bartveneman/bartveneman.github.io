@@ -8,7 +8,7 @@ layout: default
     {{ page.date | date: "%d %B %Y" }}
   </time>
 
-	{{content}}
+	{{ content }}
 
   <h2>Link to original content</h2>
   <a href="{{ url }}" rel="external noopener nofollow">Source</a>
@@ -16,7 +16,9 @@ layout: default
   <h2>Tags</h2>
   <ul role="list" class="inline-list">
     {% for tag in tags %}
-      <li>{{ tag }}</li>
+      <li>
+        <a href="/tags/{{ tag | url }}">{{ tag }}</a>
+      </li>
     {% endfor %}
   </ul>
 </article>

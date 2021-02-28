@@ -1,5 +1,6 @@
 ---
 title: Automatic pretty permalinks for Eleventy
+tags: ['eleventy']
 ---
 
 Here's what I want to achieve: a source file `blog/2020-01-01-post-slug.md` should turn into a file generated at `_site/2020-01-post-slug/index.html`. The trick is to create a `11tydata.js` file that tells Eleventy how to structure all permalinks in that folder.

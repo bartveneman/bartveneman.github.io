@@ -1,5 +1,6 @@
 ---
 title: Dear CodePen user
+tags: ['css']
 ---
 
 If there is one website I check more often than my email, it definitely is [CodePen](https://codepen.io). It shows the most awesome stuff possible in HTML, CSS, JavaScript and all of its varieties. I absolutely love it. But it has one major flaw: the users.

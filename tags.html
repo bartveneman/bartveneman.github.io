@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h1>Tags</h1>
+
+{% for tag in collections.tags %}
+  <a href="/tags/{{ tag | url }}">{{ tag }}</a>
+{% endfor %}

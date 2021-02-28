@@ -1,5 +1,8 @@
 ---
 title: Introducing Spanner.js - Lettering.js on steroids
+tags:
+  - javascript
+  - performance
 ---
 
 In an attempt to make the web faster, more and more developers are trying to discard frameworks and use tools like [Require.js](http://requirejs.org/) to only load files when they are really needed. As a result, many of the _great_ plugins written for these frameworks become useless. Even one of my all-time favorites: Dave Rupert’s [Lettering.js](http://letteringjs.com/). So I thought it would be a great time to take matters into my own hands, so last week I created a jQuery-free, plain Javascript version of Lettering.js, called [Spanner.js](https://github.com/bartveneman/Spanner.js). And I can tell you: it’s pretty darn fast!

@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+    - bookmarks
+    - tags
+  addAllPagesToCollections: false
+layout: layouts/default.html
+eleventyComputed:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged <q>{{ tag }}</q></h1>
+
+{% assign postslist = collections[tag] %}
+<p>A collection of entries tagged <i>{{ tag }}</i>.</p>
+
+<ol role="list">
+	{%- for page in postslist -%}
+	<li>
+		<h3>
+			<a href="{{ page.url }}" rel="prefetch">{{ page.data.title }}</a>
+		</h3>
+	</li>
+	{%- endfor -%}
+</ol>
+
+
+<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>

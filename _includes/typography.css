@@ -84,16 +84,16 @@ blockquote p::after {
   opacity: 30%;
 }
 
-blockquote p::after {
-  content: '”';
-  bottom: .05em;
-  right: -.5ch;
-}
-
 blockquote p::before {
-  content: '”';
+  content: open-quote;
   top: .6em;
   left: -.5ch;
+}
+
+blockquote p::after {
+  content: close-quote;
+  bottom: .05em;
+  right: -.5ch;
 }
 
 blockquote br {

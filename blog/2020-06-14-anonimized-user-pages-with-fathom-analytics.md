@@ -1,5 +1,6 @@
 ---
 title: Anonimized user pages with Fathom Analytics
+tags: ['privacy']
 ---
 
 My [Fathom Analytics](https://usefathom.com/) dashboard for [Project Wallace](https://www.projectwallace.com) was showing me all url's of the app, including the ones where a profile and project name were part of the url, like so: `www.projectwallace.com/~bartveneman/my-project`. I don't want this, because:

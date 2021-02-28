@@ -1,5 +1,6 @@
 ---
 title: How to use TailwindCSS and PurgeCSS with Svelte
+tags: ['svelte', 'tailwindcss', 'purgecss', 'css', 'performance']
 ---
 
 The authors of TailwindCSS [insist that you use PurgeCSS](https://tailwindcss.com/docs/controlling-file-size) with their library, otherwise you'll ship enomous amounts of unused CSS to your customers. I have been using TailwindCSS for [Project Wallace](https://www.projectwallace.com) for quite some time now, but only recently I decided to give PurgeCSS a try and I must admit that it's incredibly painless to setup. Here's how I did it for Project Wallace, which is a basic [Sapper project](https://sapper.svelte.dev/).

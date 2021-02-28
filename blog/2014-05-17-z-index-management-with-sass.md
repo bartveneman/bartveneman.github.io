@@ -1,5 +1,6 @@
 ---
 title: Z-index management with SASS
+tags: ['css']
 ---
 
 Large projects can suffer from complex UI components and external libraries for sliders etc. Here you are with your carefully created library and sliders are moving over modals, buttons become unresponsive to interactions because some element is placed on top of them. We need `z-index` management.

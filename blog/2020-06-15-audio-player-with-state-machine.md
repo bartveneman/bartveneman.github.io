@@ -1,5 +1,6 @@
 ---
 title: Audio player in plain JavaScript with State Machine
+tags: ['javascript', 'html', 'state-machine']
 ---
 
 The `<audio>` element is a tiny, yet powerful thing. As an exercise to improve my knowledge about State Machines [with XState](https://xstate.js.org), I thought it would be fun to implement a State Machine for an audio player.

@@ -1,7 +1,7 @@
 const cleanCss = require('clean-css')
 
 module.exports = eleventyConfig => {
-	eleventyConfig.setTemplateFormats(['md', 'html'])
+	eleventyConfig.setTemplateFormats(['md', 'html', 'njk'])
 
 	eleventyConfig.addPassthroughCopy('img')
 	eleventyConfig.addPassthroughCopy('fonts')
@@ -22,5 +22,19 @@ module.exports = eleventyConfig => {
 
 	eleventyConfig.addCollection('bookmarks', function(collection) {
 		return collection.getFilteredByGlob('bookmarks/*.md').reverse()
+	})
+
+	eleventyConfig.addCollection('tags', function(collection) {
+		const tags = new Set()
+
+		collection.getAll().forEach(item => {
+			if (!item.data.tags) return
+
+			for (const tag of item.data.tags) {
+				tags.add(tag)
+			}
+		})
+
+		return [...tags]
 	})
 }

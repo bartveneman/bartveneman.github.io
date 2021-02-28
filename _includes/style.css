@@ -17,8 +17,6 @@ body {
 	body {
 		display: grid;
 		grid-template-columns: 16em auto;
-		align-content: start;
-		align-items: start;
 		justify-items: start;
 		gap: 1em 3em;
 	}
@@ -50,6 +48,16 @@ nav a:first-of-type {
 
 .bio {
 	margin-top: 2em;
+}
+
+.tags {
+	padding: 0;
+}
+
+.tags li {
+	list-style: none;
+	display: inline-block;
+	margin: 1em 1em 0 0;
 }
 
 a {

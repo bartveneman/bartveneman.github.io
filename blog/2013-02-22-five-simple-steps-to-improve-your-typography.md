@@ -1,5 +1,9 @@
 ---
 title: Five simple steps to improve your typography
+tags:
+  - css
+  - ux
+  - typography
 ---
 
 With the responsive webdesign trend going on lately, more and more focus is put on typography. No matter if you look on a 27 inch desktop screen or a 3 inch handheld device: readability is paramount. I have collected five simple techniques to instantly improve your typography (and mine, of course).

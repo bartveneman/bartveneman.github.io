@@ -1,7 +1,7 @@
 ---
 title: How Kent C. Dodds structures his Express apps
 tags:
-  - node
+  - nodejs
   - express
 url: https://kentcdodds.com/blog/how-i-structure-express-apps
 ---
