@@ -1,4 +1,4 @@
-name: CSS Workflow
+name: Push CSS to Project Wallace
 
 on:
   push:
