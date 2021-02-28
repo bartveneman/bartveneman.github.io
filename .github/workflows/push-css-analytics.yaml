@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Push CSS to Project Wallace
         run: |
-          cat _includes/*.css all.css
+          cat _includes/*.css > all.css
           curl https://www.projectwallace.com/api/webhooks/v2/imports?token=${{ secrets.PROJECT_WALLACE_TOKEN }} --request POST --header 'Content-Type: text/plain' --data @all.css"
