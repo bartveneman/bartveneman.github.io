@@ -12,7 +12,7 @@ url: https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not
 
 Turns out that it *is* possible to giver proper user feedback about form validations, (partially) preventing the need to include heaps of javascript on a page to do basic validation feedback.
 
-```CSS
+```css
 .error-message {
     display: none;
 }
