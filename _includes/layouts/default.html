@@ -8,9 +8,11 @@
     </title>
     {% capture css %} {% include style.css %} {% endcapture %}
     {% capture typography %} {% include typography.css %} {% endcapture %}
+    {% capture prism %} {% include prism.css %} {% endcapture %}
     <style>
       {{ css | cssmin }}
       {{ typography | cssmin }}
+      {{ prism | cssmin }}
     </style>
     {% if config.INCLUDE_MONETIZATION %}
     <meta
