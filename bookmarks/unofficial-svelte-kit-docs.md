@@ -1,5 +1,5 @@
 ---
-title: https://sk-incognito.vercel.app/learn/what-is-sveltekit
+title: Unofficial svelte kit docs
 url: https://sk-incognito.vercel.app/learn/what-is-sveltekit
 tags:
  - svelte
