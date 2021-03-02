@@ -1,4 +1,4 @@
-# bartveneman.dev
+# veneman.dev
 
 - [x] Post page
 - [x] Homepage
