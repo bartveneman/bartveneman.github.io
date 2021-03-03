@@ -1,11 +1,12 @@
 ---
 title: Accessible HTML inputs
-url: https://www.ovl.design/text/inclusive-inputs/
 tags:
   - accessibility
   - html
   - form
 ---
+
+Chris Coyier tweeted a [link to an article](https://www.ovl.design/text/inclusive-inputs/) about accessible inputs, and I find tis a great example of how to put together a bunch of form elements.
 
 ```html
 <div class="form-group">

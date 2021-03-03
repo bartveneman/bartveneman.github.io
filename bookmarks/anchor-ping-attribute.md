@@ -5,12 +5,9 @@ tags:
   - anchor
   - tag
   - html
-url: https://twitter.com/svenluijten/status/1363245229533507585
 ---
 
-> 🤓 TIL about the "ping" attribute on &lt;a> tags, which will send a POST request to the given URLs when the anchor is clicked.
->
-> 🔗 [https://developer.mozilla.org/en-US/docs/Web](https://developer.mozilla.org/en-US/docs/Web)
+https://twitter.com/svenluijten/status/1363245229533507585
 
 [Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attributes)
 

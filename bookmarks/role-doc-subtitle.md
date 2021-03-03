@@ -3,10 +3,9 @@ title: role=doc-subtitle
 tags:
   - html
   - accessibility
-url: https://twitter.com/stevefaulkner/status/1236241209686966272
 ---
 
-> If you want to semantically identify a heading subtitle, look no further than role="doc-subtitle"
+https://twitter.com/stevefaulkner/status/1236241209686966272
 
 ```html
 <header>

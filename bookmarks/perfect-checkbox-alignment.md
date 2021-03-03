@@ -1,17 +1,12 @@
 ---
 title: Perfect checkbox alignment
-url: https://twitter.com/adamwathan/status/1217864323466432516
 tags:
   - html
   - form
   - ux
 ---
 
-> 🔥 Perfectly aligning checkboxes with text is super annoying, especially when the text wraps on to multiple lines.
->
-> Here's an approach I use to always perfectly center them with the first line of text, no matter the text length or size 👉
->
-> [https://codepen.io/adamwathan/pen/bGNxMpz?editors=1000](https://codepen.io/adamwathan/pen/bGNxMpz?editors=1000)
+https://twitter.com/adamwathan/status/1217864323466432516
 
 ```html
 <div class="mt-4">

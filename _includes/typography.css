@@ -100,10 +100,6 @@ blockquote p::after {
   right: -.5ch;
 }
 
-blockquote br {
-  margin-bottom: 1em;
-}
-
 @media (min-width: 60em) {
   html {
     font-size: 110%;

@@ -1,14 +1,14 @@
 ---
 title: VS Code 'do not disturb' settings
-url: https://twitter.com/HugoGiraudel/status/1365237163105939457
+url:
 tags:
   - vscode
   - settings
 ---
 
-> Latest version of my “leave me alone, VSC” configuration. Quick thread about each setting to explain what it does (when I even know) and why I don’t use it. As usual, YMMV.
+https://twitter.com/HugoGiraudel/status/1365237163105939457
 
-[Hugo shares](https://kittygiraudel.com/snippets/vsc-lite/) some of his leave-me-alone settings for VS Code. I've tried them on my own device and _man_ what a relief!
+[Kitty shares](https://kittygiraudel.com/snippets/vsc-lite/) some of their leave-me-alone settings for VS Code. I've tried them on my own device and _man_ what a relief! I only re-enabled Git, because I do find it useful most of the time.
 
 ```json
 {
