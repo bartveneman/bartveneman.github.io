@@ -1,4 +1,4 @@
-const cleanCss = require('clean-css')
+const csso = require('csso')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 
 module.exports = eleventyConfig => {
@@ -16,7 +16,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addLayoutAlias('bookmark', 'layouts/bookmark.html')
 
 	eleventyConfig.addFilter('cssmin', function(code) {
-		return new cleanCss({}).minify(code).styles
+		return csso.minify(code).css
 	})
 
 	eleventyConfig.addCollection('posts', function(collection) {
