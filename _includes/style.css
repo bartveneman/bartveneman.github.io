@@ -71,6 +71,10 @@ ul {
 	padding-left: 1rem;
 }
 
+p + ol[role="list"] {
+	margin-top: 3em;
+}
+
 ol[role="list"] {
 	list-style: none;
 	padding-left: 0;
