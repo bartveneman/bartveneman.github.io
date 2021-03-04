@@ -1,7 +1,12 @@
-const path = require('path')
-const fs = require('fs')
 const cheerio = require('cheerio')
 const got = require('got')
+
+// IMPORTANT NOTE
+// Most of the content is taken from here:
+// https://github.com/gfscott/eleventy-plugin-embed-twitter/blob/main/.eleventy.js
+//
+// I have adapted it to fit my needs, because I really don't want embed script
+// tags on my website for privacy+performance reasons.
 
 function spotPattern(str) {
   const pattern = /<p>(?:\s*)(?:<a(?:.*)>)?(?:\s*)(?:https?:)?(?:\/\/)?(?:w{3}\.)?(?:twitter\.com)\/([a-zA-Z0-9_]{1,15})?(?:\/(?:status)\/)(\d+)?(?:\S*)(?:\s*)(?:<\/a>)?(?:\s*)<\/p>/g
@@ -20,7 +25,7 @@ async function fetchTweet({ username, tweetId }) {
   return got(url).json()
 }
 
-function buildEmbed({url, author_name, author_url, html}) {
+function buildEmbed({ url, author_name, author_url, html }) {
   const $ = cheerio.load(html, null, false)
   const theTweet = $('blockquote').html()
 
