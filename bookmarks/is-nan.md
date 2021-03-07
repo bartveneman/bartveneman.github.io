@@ -13,9 +13,15 @@ window.isNaN(undefined)
 window.isNaN(NaN)
 //=> true
 
+window.isNaN('')
+//=> false
+
 Number.isNan(undefined)
 //=> false
 
 Number.isNan(NaN)
-// true
+//=> true
+
+Number.isNaN('')
+//=> false
 ```
