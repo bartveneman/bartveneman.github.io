@@ -1,10 +1,5 @@
-const fs = require('fs')
-const path = require('path')
 const cheerio = require('cheerio')
-const got = require('got')
-
-const CACHE_FILE_PATH = path.resolve(__dirname, '../../.cache/tweets.json')
-const cache = JSON.parse(fs.readFileSync(CACHE_FILE_PATH, 'utf-8'))
+const Cache = require('@11ty/eleventy-cache-assets')
 
 // IMPORTANT NOTE
 // Most of the content is taken from here:
@@ -31,16 +26,10 @@ async function fetchTweet({ username, tweetId }) {
 		`https://twitter.com/${username}/status/${tweetId}`,
 	)
 
-	if (cache[url.href]) {
-		return cache[url.href]
-	}
-
-	const tweet = await got(url).json()
-
-	cache[url.href] = tweet
-	fs.writeFileSync(CACHE_FILE_PATH, JSON.stringify(cache, null, 2))
-
-	return tweet
+	return Cache(url.href, {
+		type: 'json',
+		duration: '1y',
+	})
 }
 
 function buildEmbed({ html }) {
