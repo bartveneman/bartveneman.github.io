@@ -1,17 +1,19 @@
 const csso = require('csso')
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
-const embedYoutube = require("eleventy-plugin-youtube-embed")
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const embedYoutube = require('eleventy-plugin-youtube-embed')
 const embedTwitter = require('./plugins/eleventy-plugin-embed-tweet')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
 
-module.exports = eleventyConfig => {
-	eleventyConfig.setTemplateFormats(['md', 'html'])
+module.exports = (eleventyConfig) => {
+	eleventyConfig.setTemplateFormats(['md', 'html', 'njk'])
 
 	// PLUGINS
 	eleventyConfig.addPlugin(syntaxHighlight)
 	eleventyConfig.addPlugin(embedYoutube, {
-		lite: true
+		lite: true,
 	})
 	eleventyConfig.addPlugin(embedTwitter)
+	eleventyConfig.addPlugin(pluginRss)
 
 	// COPY THESE FILES DURING BUILD
 	eleventyConfig.addPassthroughCopy('img')
@@ -25,23 +27,23 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addLayoutAlias('bookmark', 'layouts/bookmark.html')
 
 	// FILTERS
-	eleventyConfig.addFilter('cssmin', function(code) {
+	eleventyConfig.addFilter('cssmin', function (code) {
 		return csso.minify(code).css
 	})
 
 	// COLLECTIONS
-	eleventyConfig.addCollection('posts', function(collection) {
+	eleventyConfig.addCollection('posts', function (collection) {
 		return collection.getFilteredByGlob('blog/*.md').reverse()
 	})
 
-	eleventyConfig.addCollection('bookmarks', function(collection) {
+	eleventyConfig.addCollection('bookmarks', function (collection) {
 		return collection.getFilteredByGlob('bookmarks/*.md').reverse()
 	})
 
-	eleventyConfig.addCollection('tags', function(collection) {
+	eleventyConfig.addCollection('tags', function (collection) {
 		const tags = new Set()
 
-		collection.getAll().forEach(item => {
+		collection.getAll().forEach((item) => {
 			if (!item.data.tags) return
 
 			for (const tag of item.data.tags) {
@@ -51,6 +53,4 @@ module.exports = eleventyConfig => {
 
 		return [...tags]
 	})
-
-
 }
