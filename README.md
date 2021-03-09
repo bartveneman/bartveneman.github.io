@@ -4,11 +4,11 @@
 - [x] Homepage
 - [x] Archive page
 - [x] Styling
-- [ ] RSS/Atom Feed
+- [x] RSS/Atom Feed
 - [x] Web monetization
 - [x] Analytics
-- [ ] Sitemap
-- [ ] Robots.txt
+- [x] Sitemap
+- [x] Robots.txt
 - [x] Canonical urls
 - [x] Favicon
 - [x] Auto deploy and preview branches
