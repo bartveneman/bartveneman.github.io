@@ -20,6 +20,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('fonts')
 	eleventyConfig.addPassthroughCopy('*.png')
 	eleventyConfig.addPassthroughCopy('favicon.ico')
+	eleventyConfig.addPassthroughCopy('robots.txt')
 
 	// LAYOUTS
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.html')

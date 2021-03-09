@@ -1,0 +1,7 @@
+---
+  permalink: sitemap.txt
+  eleventyExcludeFromCollections: true
+---
+{%- for page in collections.all %}
+{{ page.url | url | absoluteUrl(metadata.url) }}
+{%- endfor %}
