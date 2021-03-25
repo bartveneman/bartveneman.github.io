@@ -23,11 +23,25 @@ Things that aren't useful and should therefore be hidden:
 - **Who To Follow**: Seriously?
 
 ```css
-[aria-label="Timeline: Trending now"],
+/* Floating: DM's */
 [data-testid="DMDrawer"],
+
+/* Menu: Explore */
 [data-testid="AppTabBar_Explore_Link"],
+
+/* Menu: Lists */
 a[href*="/lists"],
-[role="complementary"][aria-label="Who to follow"] {
+
+
+/* Sidebar: Trending now */
+[aria-label="Timeline: Trending now"],
+
+/* Sidebar: Who to follow */
+[role="complementary"][aria-label="Who to follow"],
+
+/* Sidebar: Recommended topics */
+[aria-label="Timeline: "] 
+{
 	display: none;
 }
 ```
