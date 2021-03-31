@@ -54,7 +54,9 @@ Kudos to David Kourshid for using Custom Properties for setting the width. Makes
 
 ```css
 html {
-  /* Crank up the sidebar width (where we write the code) */
+	font-size: 120%;
+	
+ 	/* Crank up the sidebar width (where we write the code) */
 	--sidebar-width: 50rem;
 }
 ```
