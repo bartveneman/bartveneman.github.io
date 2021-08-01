@@ -1,11 +1,36 @@
+const path = require('path')
 const csso = require('csso')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const embedYoutube = require('eleventy-plugin-youtube-embed')
 const embedTwitter = require('./plugins/eleventy-plugin-embed-tweet')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
+const Image = require('@11ty/eleventy-img')
+
+async function imageShortcode(src, alt, sizes = '(prefers-reduced-data: reduce) 200px, (min-width: 810px) 810px, (min-width: 400px) 400px, 200px') {
+	let metadata = await Image(src, {
+		widths: [400, 810],
+		formats: ['avif', 'webp', 'jpeg'],
+		outputDir: './_site/img',
+		filenameFormat: (id, src, width, format, options) => {
+			const extension = path.extname(src)
+			const name = path.basename(src, extension)
+			return `${name}-w${width}.${format}`
+		}
+	})
+	let imageAttributes = {
+		alt,
+		sizes,
+		loading: 'lazy',
+		decodng: 'async'
+	}
+
+	return Image.generateHTML(metadata, imageAttributes, {
+		whitespaceMode: 'inline'
+	})
+}
 
 module.exports = (eleventyConfig) => {
-	eleventyConfig.setTemplateFormats(['md', 'html', 'njk'])
+	eleventyConfig.setTemplateFormats(['md', 'html', 'njk', 'liquid'])
 
 	// PLUGINS
 	eleventyConfig.addPlugin(syntaxHighlight)
@@ -14,6 +39,7 @@ module.exports = (eleventyConfig) => {
 	})
 	eleventyConfig.addPlugin(embedTwitter)
 	eleventyConfig.addPlugin(pluginRss)
+	eleventyConfig.addLiquidShortcode('image', imageShortcode)
 
 	// COPY THESE FILES DURING BUILD
 	eleventyConfig.addPassthroughCopy('img')

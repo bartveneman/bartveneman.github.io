@@ -14,5 +14,8 @@
 		"cheerio": "^1.0.0-rc.5",
 		"csso": "^4.2.0",
 		"eleventy-plugin-youtube-embed": "^1.5.0"
+	},
+	"dependencies": {
+		"@11ty/eleventy-img": "^0.9.0"
 	}
 }
