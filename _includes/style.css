@@ -20,15 +20,12 @@ body {
 		justify-items: start;
 		gap: 1em 3em;
 	}
-
 	nav {
 		grid-column: 1 / -1;
 	}
-
 	main {
 		grid-column: 2;
 	}
-
 	footer {
 		grid-column: 2 / -1;
 	}
@@ -66,12 +63,11 @@ a {
 	text-decoration-thickness: 2px;
 }
 
-ol,
-ul {
+ol, ul {
 	padding-left: 1rem;
 }
 
-p + ol[role="list"] {
+p+ol[role="list"] {
 	margin-top: 3em;
 }
 
@@ -103,12 +99,11 @@ table {
 	border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
 	padding: .5em 1ch;
 }
 
-h1 + time {
+h1+time {
 	margin-top: -1em;
 	display: block;
 	margin-bottom: 3em;
@@ -128,7 +123,7 @@ h1 + time {
 }
 
 @media (min-width: 60em) {
-	h1 + time {
+	h1+time {
 		margin-top: -3em;
 		margin-bottom: 4.5em;
 	}
@@ -159,8 +154,7 @@ hr {
 	fill: hsl(200, 30%, 60%);
 }
 
-.bio,
-footer {
+.bio, footer {
 	color: hsl(200, 20%, 50%);
 }
 
@@ -168,23 +162,16 @@ time {
 	color: hsl(200, 20%, 50%);
 }
 
-p code,
-li code,
-pre,
-th {
+p code, li code, pre, th {
 	color: hsl(200, 50%, 30%);
 	background-color: hsl(180, 20%, 95%);
 }
 
-pre,
-th,
-td {
+pre, th, td {
 	border: 1px solid;
 }
 
-th,
-td,
-pre {
+th, td, pre {
 	border-color: hsl(200, 10%, 80%);
 }
 
@@ -194,43 +181,39 @@ img {
 	vertical-align: middle;
 }
 
+picture {
+	display: block;
+}
+
+picture+picture {
+	margin-top: 2em;
+}
+
 @media screen and (prefers-color-scheme: dark) {
 	body {
 		color: hsl(200, 10%, 80%);
 		background-color: hsl(200, 30%, 10%);
 	}
-
 	h1 {
 		color: hsl(200, 12%, 75%);
 	}
-
 	hr {
 		background-color: hsl(200, 20%, 30%);
 	}
-
 	.logo {
 		fill: hsl(200, 50%, 40%);
 	}
-
-	.bio,
-	footer {
+	.bio, footer {
 		color: hsl(200, 20%, 60%);
 	}
-
 	time {
 		color: hsl(200, 20%, 50%);
 	}
-
-	p code,
-	li code,
-	pre {
+	p code, li code, pre {
 		background-color: hsl(200, 40%, 7%);
 		color: hsl(200, 50%, 60%);
 	}
-
-	pre,
-	th,
-	td {
+	pre, th, td {
 		border-color: hsl(200, 30%, 30%);
 	}
 }
