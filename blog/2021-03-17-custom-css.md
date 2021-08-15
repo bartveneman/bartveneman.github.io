@@ -44,6 +44,11 @@ a[href*="/lists"],
 {
 	display: none;
 }
+
+/* Sidebar: Recommended topics */
+.r-1bro5k0 {
+	min-height: 0;
+}
 ```
 
 ## Xstate.JS.org
