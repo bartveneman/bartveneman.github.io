@@ -9,7 +9,7 @@ const Image = require('@11ty/eleventy-img')
 async function imageShortcode(src, alt, sizes = '(prefers-reduced-data: reduce) 200px, (min-width: 810px) 810px, (min-width: 400px) 400px, 200px') {
 	let metadata = await Image(src, {
 		widths: [400, 810],
-		formats: ['avif', 'webp', 'jpeg'],
+		formats: ['webp', 'jpeg'],
 		outputDir: './_site/img',
 		filenameFormat: (id, src, width, format, options) => {
 			const extension = path.extname(src)
