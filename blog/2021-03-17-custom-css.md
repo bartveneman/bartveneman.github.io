@@ -111,6 +111,16 @@ I use Gatsby for work and I'm not that interested in seeing marketing stuff. I n
 }
 ```
 
+## DuckDuckGo.com
+
+There's pretty much no focus state for search results, apart from a tiny 14px url changing from green to blue. So I added my own.
+
+```css
+.result:focus-within {
+	outline: 2px solid;
+}
+```
+
 ---
 
 Although most of this CSS isn't too hard, I've had to look up some attribute selectors to see the difference between some of them. That makes writing this custom CSS a little bit more of a fun journey.
