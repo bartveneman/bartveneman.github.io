@@ -19,7 +19,7 @@ Being so frustrated at the capacity of modern day Frontend Devs to write &#39;pr
 - Wrap a `div` around pretty much anything because <q>it might come handy when starting to write the CSS</q><br>_(No it doesn&#39;t and using a particular CSS framework put you in a mindset that you need to wrap every single element if you want to somehow align them. Even though the framework didn't advertise that at all.)_
 - Nobody seems to have an idea about how `position: absolute` works. <br>Like it's some kind of magic box and tinkering with it will eventually solve their issue;
 - Devs didn&#39;t recognise that their DevTools were telling them why their properties/values weren't working. <br>DevTools do an excellent job these days of showing a warning when a declaration isn't applied because a parent element is missing a certain property, or some other reason. Clearly folks had never heard of this option;
-- Some folks thought it&#39;s only possible to create rows and columns using `&lt;div&gt;`s.<br>_I don&#39;t even&hellip;_
+- Some folks thought it&#39;s only possible to create rows and columns using `<div>`s.<br>_I don&#39;t even&hellip;_
 
 ## The highs
 
