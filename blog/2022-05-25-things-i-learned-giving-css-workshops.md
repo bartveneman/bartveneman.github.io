@@ -19,11 +19,12 @@ Being so frustrated at the capacity of modern day Frontend Devs to write &#39;pr
 - Wrap a `div` around pretty much anything because <q>it might come handy when starting to write the CSS</q><br>_(No it doesn&#39;t and using a particular CSS framework put you in a mindset that you need to wrap every single element if you want to somehow align them. Even though the framework didn't advertise that at all.)_
 - Nobody seems to have an idea about how `position: absolute` works. <br>Like it's some kind of magic box and tinkering with it will eventually solve their issue;
 - Devs didn't recognise that their DevTools were telling them why their properties/values weren't working. <br>DevTools do an excellent job these days of showing a warning when a declaration isn't applied because a parent element is missing a certain property, or some other reason. Clearly folks had never heard of this option;
-- Some folks thought it's only possible to create rows and columns using &lt;div&gt;s.<br>
+- Some folks thought it's only possible to create rows and columns using `&lt;div&gt;`s.<br>
 
 ## The highs
 
 - We got to spend roughtly ~50% on writing the HTML in workshop that was supposed to teach them about CSS and everyone loved it, no exceptions! Folks were generally unaware of all the options available in HTML. Also, they were very open to the idea of building the HTML first and then solving the styling with CSS, instead of trying to let their HTML match the design as closely as possible;
+- Devs were really grateful for doing a walkthrough of these things together, as they felt it's so different from what they've always done but faster and with better results;
 - Folks are pretty excited when they see what's prossible in modern CSS (with pretty good browser support): CSS Grid, Flexbox &quot;magic&quot;, `accent-color` and way more;
-- Devs were pretty much aware that images need an `alt` attribute, but what to write in it is a mystery to them;
+- Devs were pretty much aware that images need an `alt` attribute 👍, but what to write in it is a mystery to them 👎;
 
