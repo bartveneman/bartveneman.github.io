@@ -121,6 +121,22 @@ There's pretty much no focus state for search results, apart from a tiny 14px ur
 }
 ```
 
+## Medium.com
+
+Noise, just sheer noise. And sometimes a bit of proper content. Anyway, there are no good hooks for making Medium easy to style, but this is what works for now. it removes everything aoart from the main content.
+
+```css
+.mn.n.ak,
+.ag.h.k.j.i.cv,
+.eq.ci,
+.v.w.x.y.z,
+.pw-post-byline-header,
+.l.oj.ny,
+.ns.nt {
+	display: none
+}
+```
+
 ---
 
 Although most of this CSS isn't too hard, I've had to look up some attribute selectors to see the difference between some of them. That makes writing this custom CSS a little bit more of a fun journey.
