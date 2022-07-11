@@ -123,7 +123,7 @@ There's pretty much no focus state for search results, apart from a tiny 14px ur
 
 ## Medium.com
 
-Noise, just sheer noise. And sometimes a bit of proper content. Anyway, there are no good hooks for making Medium easy to style, but this is what works for now. it removes everything aoart from the main content.
+Noise, just sheer noise. And sometimes a bit of proper content. Anyway, there are no good hooks for making Medium easy to style, but this is what works for now. it removes everything apart from the main content.
 
 ```css
 .mn.n.ak,
