@@ -137,6 +137,20 @@ Noise, just sheer noise. And sometimes a bit of proper content. Anyway, there ar
 }
 ```
 
+## LogRocket blog
+
+Removing experiments and related content, because I always confuse them for actual content
+
+```css
+.vwo_loaded {
+	display: none;
+}
+
+.code-block:has(hr:first-child) {
+	display: none;
+}
+```
+
 ---
 
 Although most of this CSS isn't too hard, I've had to look up some attribute selectors to see the difference between some of them. That makes writing this custom CSS a little bit more of a fun journey.
