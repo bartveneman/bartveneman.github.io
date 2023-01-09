@@ -7,7 +7,7 @@
 		"build": "eleventy"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^0.12.1",
+		"@11ty/eleventy": "^1.0.2",
 		"@11ty/eleventy-cache-assets": "^2.1.0",
 		"@11ty/eleventy-img": "^0.10.0",
 		"@11ty/eleventy-plugin-rss": "^1.1.1",
