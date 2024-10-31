@@ -7,7 +7,11 @@ tags:
   - ux
 ---
 
-https://twitter.com/kino_auge/status/1357269817322049537
+> Great diagram to explain CSS font-display.
+>
+> Image by @notwaldorf https://t.co/IjLhvblEYt
+> via @simonhearne https://t.co/pR5TMl8LfK#webdev @css https://t.co/uIeDBx1X95 pic.twitter.com/Jgwg4ZyWfg
+> — Florian Geierstanger (@kino_auge) [February 4, 2021](https://twitter.com/kino_auge/status/1357269817322049537)
 
 This diagram visually explains the different values for `font-display`.
 

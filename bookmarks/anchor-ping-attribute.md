@@ -7,7 +7,11 @@ tags:
   - html
 ---
 
-https://twitter.com/svenluijten/status/1363245229533507585
+> 🤓 TIL about the "ping" attribute on <a> tags, which will send a POST request to the given URLs when the anchor is clicked.
+>
+> 🔗 https://t.co/1BP30xMR1l pic.twitter.com/gXPFPDIz8u
+>
+> — Sven (@svenluijten) [February 20, 2021](https://twitter.com/svenluijten/status/1363245229533507585)
 
 [Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attributes)
 

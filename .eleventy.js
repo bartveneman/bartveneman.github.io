@@ -2,7 +2,6 @@ const path = require('path')
 const csso = require('csso')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const embedYoutube = require('eleventy-plugin-youtube-embed')
-const embedTwitter = require('./plugins/eleventy-plugin-embed-tweet')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const Image = require('@11ty/eleventy-img')
 
@@ -37,7 +36,6 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(embedYoutube, {
 		lite: true,
 	})
-	eleventyConfig.addPlugin(embedTwitter)
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addLiquidShortcode('image', imageShortcode)
 
@@ -47,6 +45,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('*.png')
 	eleventyConfig.addPassthroughCopy('favicon.ico')
 	eleventyConfig.addPassthroughCopy('robots.txt')
+	eleventyConfig.addPassthroughCopy('.well-known')
 
 	// LAYOUTS
 	eleventyConfig.addLayoutAlias('default', 'layouts/default.html')

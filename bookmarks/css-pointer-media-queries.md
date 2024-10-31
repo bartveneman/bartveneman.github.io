@@ -5,7 +5,17 @@ tags:
   - ux
 ---
 
-https://twitter.com/argyleink/status/1252661430618189829
+> - ✅ style if mobile
+> - ✅ style if desktop
+> - ✅ style if stylus
+> - ✅ style if controller
+> - ✅ combine together 🎉
+>
+> spec https://t.co/U4QWyw76kR
+>
+> caniuse https://t.co/ig9ONaQJAI pic.twitter.com/u0lA0UQreU
+>
+> — Adam Argyle (@argyleink) [April 21, 2020](https://twitter.com/argyleink/status/1252661430618189829)
 
 ```css
 /* Laptop/desktop styles */
