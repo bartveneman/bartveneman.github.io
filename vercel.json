@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": ".well-known/avatar",
+      "destination": "bartveneman.png"
+    },
+    {
+      "source": ".well-known/avatar.png",
+      "destination": "bartveneman.png"
+    }
+  ]
+}
